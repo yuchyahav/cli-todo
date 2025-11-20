@@ -7,11 +7,13 @@
 
 void TodoController::run()
 {
+    constexpr auto max_size = std::numeric_limits<std::streamsize>::max();
+
     bool exit = false;
     while (exit == false)
     {
         int x = get_input();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cin.ignore(max_size, '\n');
 
         switch (x)
         {
