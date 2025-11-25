@@ -10,29 +10,23 @@ namespace Todo
 {
 struct Task
 {
-  size_t id;
   std::string desc;
+  std::vector<Task> child_tasks;
   bool completion;
 };
-BOOST_DESCRIBE_STRUCT(Task, (), (id, desc, completion));
+BOOST_DESCRIBE_STRUCT(Task, (), (desc, child_tasks, completion));
 
 class Model
 {
 private:
-  static inline std::filesystem::path TODO_DIR = ".todo";
-  static inline std::filesystem::path TODO_FILE = "todo_list.json";
+  const static inline std::filesystem::path TODO_DIR = ".todo";
+  const static inline std::filesystem::path TODO_FILE = "todo_list.json";
 
 public:
   /**
    * @brief Constructs an object by reading from a JSON file.
    */
   Model();
-
-  /**
-   * @brief Destructor.
-   * @note Calls save_file().
-   */
-  ~Model();
 
   /**
    * @brief Sets up the .todo directory and its contents.
@@ -44,7 +38,7 @@ public:
    *
    * @param task_desc Description of task to add.
    */
-  void add(const std::string &item_desc);
+  void add(const std::string &item_desc, size_t index = 0);
 
   /**
    * @brief Remove @p index task from the todo list.

@@ -7,6 +7,9 @@ set(CMAKE_BUILD_TYPE Debug)
 
 find_package(Boost REQUIRED COMPONENTS json CONFIG)
 
+set(CURSES_NEED_NCURSES TRUE)
+find_package(Curses REQUIRED)
+
 set(SRC_FILES
     src/main.cpp
     src/view.cpp
@@ -20,3 +23,4 @@ include_directories(
 
 add_executable(todo ${SRC_FILES})
 target_link_libraries(todo PRIVATE Boost::json)
+target_link_libraries(todo PRIVATE ${CURSES_LIBRARIES})

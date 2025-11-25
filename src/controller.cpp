@@ -1,96 +1,92 @@
 #include <cstdlib>
-#include <iostream>
-#include <limits>
+#include <exception>
 #include <string>
 
 #include "controller.h"
+#include "view.h"
 
 void Todo::Controller::run()
 {
-  constexpr auto max_size = std::numeric_limits<std::streamsize>::max();
-
-  bool exit = false;
-  while (exit == false)
+  bool running = true;
+  while (running)
   {
-    int x = get_input();
-    std::cin.ignore(max_size, '\n');
-
-    switch (x)
+    MenuOptions opt = view_.get_menu_opt();
+    switch (opt)
     {
-      case 1:
-      {
-        std::cout << "enter todo item to add: ";
-        std::string todo;
-        std::getline(std::cin, todo);
-        std::cout << '\n';
-        pass_add(todo);
+      case MenuOptions::ADD:
+        handle_add();
         break;
-      }
 
-      case 2:
-      {
-        int index;
-        std::cout << "enter todo item to remove: ";
-        std::cin >> index;
-        pass_rm(index);
+      case MenuOptions::REMOVE:
+        handle_remove();
         break;
-      }
 
-      case 3:
-      {
-        pass_display();
+      case MenuOptions::DISPLAY:
+        handle_display();
         break;
-      }
 
-      case 4:
-      {
-        pass_display();
-        std::cout << "which task's status will you change: ";
-        size_t index;
-        std::cin >> index;
-        std::cout << '\n';
-        pass_status_change(index);
+      case MenuOptions::CHANGE_STATUS:
+        handle_status_change();
         break;
-      }
 
-      case 0:
-      {
-        exit = true;
+      case MenuOptions::EXIT:
+        running = false;
+        model_.save_file();
         break;
-      }
+
+      case MenuOptions::INVALID:
+      default:
+        view_.display_msg("Invalid option. Please try again.");
+        break;
     }
   }
 }
 
-int Todo::Controller::get_input()
+void Todo::Controller::handle_add()
 {
-  int x;
-  std::cout << "1. add\n";
-  std::cout << "2. remove\n";
-  std::cout << "3. show\n";
-  std::cout << "4. change status\n";
-  std::cout << "0. exit\n";
-  std::cout << "choose: ";
-  std::cin >> x;
-  return x;
+  std::string desc =
+      view_.get_task_desc("Enter the description of your task: ");
+  size_t index = view_.get_index("Enter parent ID (0 for root task): ");
+
+  try
+  {
+    model_.add(desc, index);
+    view_.display_msg("Successfully added.");
+  }
+  catch (const std::exception &e)
+  {
+    view_.display_msg("Error: " + static_cast<std::string>(e.what()));
+  }
 }
 
-void Todo::Controller::pass_add(const std::string &task_desc)
+void Todo::Controller::handle_remove()
 {
-  model_.add(task_desc);
+  try
+  {
+    model_.remove(
+        view_.get_index("Enter the index of the task you want to remove: "));
+  }
+  catch (const std::exception &e)
+  {
+    view_.display_msg("Error: " + static_cast<std::string>(e.what()));
+  }
 }
 
-void Todo::Controller::pass_rm(size_t index)
+void Todo::Controller::handle_display()
 {
-  model_.remove(index);
-}
-
-void Todo::Controller::pass_display()
-{
+  view_.display_msg("\nCurrent list:");
   view_.display_list(model_.get_list());
 }
 
-void Todo::Controller::pass_status_change(size_t index)
+void Todo::Controller::handle_status_change()
 {
-  model_.change_task_status(index);
+  try
+  {
+    model_.change_task_status(view_.get_index(
+        "Enter the index of the task you want to change the status of: "));
+  }
+  catch (const std::exception &e)
+  {
+    view_.display_msg("Error: " + static_cast<std::string>(e.what()));
+  }
 }

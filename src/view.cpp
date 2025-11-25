@@ -1,16 +1,71 @@
+#include <curses.h>
+
+#include <iomanip>
 #include <iostream>
+#include <limits>
 #include <string>
 #include <vector>
 
 #include "view.h"
 
-void Todo::View::display_list(const std::vector<Todo::Task> todo_list)
+void clear_input_buf()
 {
-  std::cout << '\n';
+  std::cin.clear();
+  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
+
+Todo::MenuOptions Todo::View::get_menu_opt()
+{
+  std::cout << "1. Add a task\n"
+            << "2. Remove a task\n"
+            << "3. Display todo list\n"
+            << "4. Change completion status of a task\n"
+            << "0. Exit\n"
+            << "Enter choice: ";
+
+  size_t opt;
+  std::cin >> opt;
+  clear_input_buf();
+
+  if (opt >= 0 && opt <= 5)
+  {
+    return static_cast<MenuOptions>(opt);
+  }
+  return MenuOptions::INVALID;
+}
+
+std::string Todo::View::get_task_desc(const std::string &msg)
+{
+  std::cout << msg;
+  std::string desc;
+  std::getline(std::cin, desc);
+  return desc;
+}
+
+size_t Todo::View::get_index(const std::string &msg)
+{
+  std::cout << msg;
+  size_t index;
+  std::cin >> index;
+  clear_input_buf();
+  return index;
+}
+
+void Todo::View::display_list(const std::vector<Todo::Task> &todo_list,
+                              size_t level)
+{
+  size_t id = 1;
   for (const auto &task : todo_list)
   {
-    std::cout << task.id << ". " << task.desc << ' '
+    std::cout << std::string(level, ' ') << id << ". " << task.desc << ' '
               << (task.completion ? "(done)" : "(in progress)") << '\n';
+
+    if (todo_list[id - 1].child_tasks.size() != 0)
+    {
+      display_list(todo_list[id - 1].child_tasks, level + 1);
+    }
+
+    ++id;
   }
   std::cout << '\n';
 }
