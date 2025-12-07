@@ -7,19 +7,32 @@ namespace Todo
 class BasicView : public View
 {
 public:
+  /**
+   * @brief Default constructor.
+   */
   BasicView() = default;
 
-  virtual MenuOptions get_menu_opt() override;
+  /**
+   * @brief Gets input from the user.
+   *
+   * @param msg String to display.
+   */
+  virtual std::string get_input(const std::string &msg) override;
 
-  virtual std::string get_task_desc(const std::string &msg) override;
-
-  virtual std::vector<size_t> get_path(const std::string &msg) override;
-
-  virtual uint8_t get_status_change(const std::string &msg) override;
-
+  /**
+   * @brief Display @p task list to screen.
+   *
+   * @param todo_list Const reference to a vector.
+   * @param level Recursion depth.
+   */
   virtual void display_list(const std::vector<Todo::Task> &todo_list,
                             size_t level = 0) override;
 
+  /**
+   * @brief Display @p message to screen.
+   *
+   * @param msg String to display.
+   */
   virtual void display_msg(const std::string &msg) override;
 };
 }  // namespace Todo

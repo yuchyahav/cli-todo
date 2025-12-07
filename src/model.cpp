@@ -4,7 +4,6 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
-#include <stdexcept>
 
 #include "model.h"
 
@@ -121,6 +120,7 @@ bool Model::remove(const std::vector<size_t> &path)
     curr = &(curr->child_tasks.at(*it));
   }
   curr->child_tasks.erase(curr->child_tasks.begin() + *(path.end() - 1));
+
   return true;
 }
 

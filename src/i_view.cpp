@@ -1,6 +1,7 @@
 #include <ncurses.h>
 
 #include <cctype>
+#include <sstream>
 #include <string>
 #include <vector>
 
@@ -17,151 +18,113 @@ IView::IView()
 
   int height = LINES;
   int width = COLS;
-
   int menu_height = 12;
-  int list_height = height - menu_height;
 
-  list_win_ = newwin(list_height, width, 0, 0);
-  menu_win_ = newwin(menu_height, width, list_height, 0);
+  list_height_ = height - menu_height;
+  list_width_ = width;
+  scroll_offset_ = 0;
+
+  list_pad_ = newpad(1000, width - 2);
+  list_win_ = newwin(list_height_, width, 0, 0);
+  menu_win_ = newwin(menu_height, width, list_height_, 0);
+
+  keypad(menu_win_, true);
+
+  wclear(list_win_);
+  box(list_win_, 0, 0);
+  mvwprintw(list_win_, 1, 2, "=== Todo List ===");
+  wrefresh(list_win_);
 }
 
 IView::~IView()
 {
+  delwin(list_pad_);
   delwin(list_win_);
   delwin(menu_win_);
   endwin();
 }
 
-MenuOptions IView::get_menu_opt()
+void IView::refresh_list_view()
+{
+  prefresh(list_pad_, scroll_offset_, 0, 2, 1, list_height_ - 2, list_width_ - 2);
+}
+
+std::string IView::get_input(const std::string &msg)
 {
   wclear(menu_win_);
   box(menu_win_, 0, 0);
 
-  mvwprintw(menu_win_, 1, 2, "=== Todo Menu ===");
-  mvwprintw(menu_win_, 3, 2, "1. Add task");
-  mvwprintw(menu_win_, 4, 2, "2. Remove task");
-  mvwprintw(menu_win_, 5, 2, "3. Change task status");
-  mvwprintw(menu_win_, 6, 2, "4. Clear list");
-  mvwprintw(menu_win_, 7, 2, "0. Exit");
-  mvwprintw(menu_win_, 9, 2, "Choose an option: ");
+  std::stringstream ss(msg);
+  std::string line;
+  int curr_y = 1;
+  int padding = 2;
 
-  wrefresh(menu_win_);
-  int ch = wgetch(menu_win_);
-  switch (ch)
+  while (std::getline(ss, line))
   {
-    case '1':
-      return MenuOptions::ADD;
-    case '2':
-      return MenuOptions::REMOVE;
-    case '3':
-      return MenuOptions::CHANGE_STATUS;
-    case '4':
-      return MenuOptions::CLEAR;
-    case '0':
-      return MenuOptions::EXIT;
-    default:
-      return MenuOptions::INVALID;
+    mvwprintw(menu_win_, curr_y, padding, "%s", line.c_str());
+    curr_y++;
   }
-}
 
-std::string IView::get_task_desc(const std::string &msg)
-{
-  wclear(menu_win_);
-  box(menu_win_, 0, 0);
-  mvwprintw(menu_win_, 1, 2, "%s", msg.c_str());
-  mvwprintw(menu_win_, 3, 2, "> ");
   wrefresh(menu_win_);
 
-  char buffer[256];
-  echo();
+  std::string buffer;
+  int ch;
+
   curs_set(1);
-  wgetnstr(menu_win_, buffer, 255);
-  noecho();
-  curs_set(0);
 
-  return std::string(buffer);
-}
-
-std::vector<size_t> IView::get_path(const std::string &msg)
-{
-  std::vector<size_t> path;
   while (true)
   {
-    wclear(menu_win_);
-    box(menu_win_, 0, 0);
-    mvwprintw(menu_win_, 1, 2, "%s", msg.c_str());
-    mvwprintw(menu_win_, 3, 2, "> ");
+    mvwprintw(menu_win_, curr_y + 1, 2, "> ");
+    mvwprintw(menu_win_, curr_y + 1, 4, "%s",
+              std::string(buffer.length() + 5, ' ').c_str());
+    mvwprintw(menu_win_, curr_y + 1, 4, "%s", buffer.c_str());
     wrefresh(menu_win_);
 
-    echo();
-    curs_set(1);
-    char buf[2];
-    wgetnstr(menu_win_, buf, 1);
-    noecho();
-    curs_set(0);
+    ch = wgetch(menu_win_);
 
-    if (buf[0] == '\0')
+    if (ch == '\n')
     {
       break;
     }
-
-    if (not isdigit(buf[0]))
+    else if (ch == KEY_UP)
     {
-      std::exit(EXIT_FAILURE);
+      if (scroll_offset_ > 0)
+      {
+        scroll_offset_--;
+        refresh_list_view();
+      }
     }
-
-    path.emplace_back(atoi(&buf[0]) - 1);
-  }
-  return path;
-}
-
-uint8_t IView::get_status_change(const std::string &msg)
-{
-  uint8_t index;
-  while (true)
-  {
-    wclear(menu_win_);
-    box(menu_win_, 0, 0);
-    mvwprintw(menu_win_, 1, 2, "%s", msg.c_str());
-    mvwprintw(menu_win_, 2, 2, "1 - Not Started");
-    mvwprintw(menu_win_, 3, 2, "2 - In Progress");
-    mvwprintw(menu_win_, 4, 2, "3 - Completed");
-    mvwprintw(menu_win_, 5, 2, "> ");
-    wrefresh(menu_win_);
-
-    echo();
-    curs_set(1);
-    char buf[2];
-    wgetnstr(menu_win_, buf, 1);
-    noecho();
-    curs_set(0);
-
-    if (not isdigit(buf[0]))
+    else if (ch == KEY_DOWN)
     {
-      wclear(menu_win_);
-      box(menu_win_, 0, 0);
-      mvwprintw(menu_win_, 1, 2, "Error: Not a number");
-      wrefresh(menu_win_);
-      continue;
+      scroll_offset_++;
+      refresh_list_view();
     }
-
-    index = atoi(&buf[0]);
-    break;
+    else if (ch == KEY_BACKSPACE || ch == 127 || ch == '\b')
+    {
+      if (!buffer.empty())
+      {
+        buffer.pop_back();
+      }
+    }
+    else if (isprint(ch))
+    {
+      buffer.push_back(ch);
+    }
   }
-  return index;
+
+  curs_set(0);
+  return buffer;
 }
 
 void IView::display_list(const std::vector<Todo::Task> &todo_list, size_t level)
 {
   if (level == 0)
   {
-    wclear(list_win_);
-    box(list_win_, 0, 0);
-    mvwprintw(list_win_, 1, 2, "=== Todo List ===");
-    wmove(list_win_, 3, 0);
+    wclear(list_pad_);
   }
 
-  for (size_t i = 0; i < todo_list.size(); ++i)
+  size_t lsize = todo_list.size();
+  for (size_t i = 0; i < lsize; ++i)
   {
     const auto &t = todo_list[i];
     std::string status = [&t]() -> std::string
@@ -175,16 +138,13 @@ void IView::display_list(const std::vector<Todo::Task> &todo_list, size_t level)
         case Status::COMPLETED:
           return "[X]";
         default:
-          return "[404]";
+          return "[?]";
       }
     }();
 
-    int y = getcury(list_win_);
-    int x = 2 + (level * 2);
-
-    mvwprintw(list_win_, y, x, "%zu. %s %s", i + 1, status.c_str(),
-              t.desc.c_str());
-    wprintw(list_win_, "\n");
+    int y = getcury(list_pad_);
+    int x = 1 + (level * 2);
+    mvwprintw(list_pad_, y, x, "%zu. %s %s\n", i + 1, status.c_str(), t.desc.c_str());
 
     if (!t.child_tasks.empty())
     {
@@ -192,15 +152,7 @@ void IView::display_list(const std::vector<Todo::Task> &todo_list, size_t level)
     }
   }
 
-  if (todo_list.empty() && level == 0)
-  {
-    mvwprintw(list_win_, 3, 2, "(no tasks)");
-  }
-
-  if (level == 0)
-  {
-    wrefresh(list_win_);
-  }
+  refresh_list_view();
 }
 
 void IView::display_msg(const std::string &msg)

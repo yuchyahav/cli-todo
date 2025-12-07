@@ -55,6 +55,9 @@ public:
    */
   bool remove(const std::vector<size_t> &path);
 
+  /**
+   * @brief Clears (empties) the list.
+   */
   void clear();
 
   /**
