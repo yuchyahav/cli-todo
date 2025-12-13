@@ -8,7 +8,7 @@ A persistent, hierarchical command-line To-Do application allowing infinite subt
 
 ## Architectural Design
 
-MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from the user interface, allows for swapping between a basic text UI and a rich terminal UI without changing core logic.
+MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from the user interface, which allows for swapping between a basic text UI and a rich terminal UI without changing core logic.
 
 * Model: Manages the recursive Task data structure and handles JSON file I/O using Boost.JSON.
 * View: An abstract base class defining the interface.
@@ -27,11 +27,11 @@ MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from
 
 ## Roadmap
 
+- [X] Task inheritance
 - [ ] Task priority
 - [ ] Undo/redo
 - [ ] Copy/pase
 - [ ] Due dates
-- [ ] Task inheritance
 - [ ] Vi view
 
 ## Installation
