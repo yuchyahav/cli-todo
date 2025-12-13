@@ -14,10 +14,9 @@ MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from
 * View: An abstract base class defining the interface.
   * BasicView: Standard text-based I/O.
   * IView: Ncurses-based TUI for an interactive experience.
-* Controller: Connects the two, parsing user input strings (like paths "1 2") into model commands.
+* Controller: Connects the two, parsing user input strings (like paths "121") into model commands.
 
 <img src="assets/mvc_diagram.png" width="50%" />
-
 
 ## Key Features
 
@@ -28,10 +27,10 @@ MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from
 ## Roadmap
 
 - [X] Task inheritance
-- [ ] Task priority
+- [X] Task priority
+- [ ] Due dates
 - [ ] Undo/redo
 - [ ] Copy/pase
-- [ ] Due dates
 - [ ] Vi view
 
 ## Installation

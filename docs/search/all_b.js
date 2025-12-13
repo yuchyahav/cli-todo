@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save_5ffile_0',['save_file',['../class_todo_1_1_model.html#ae49b88f0a7c502dd41722d99da22d8ab',1,'Todo::Model']]],
-  ['status_1',['Status',['../namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35',1,'Todo']]],
-  ['status_2',['status',['../struct_todo_1_1_task.html#ada7c8bbfa711c17f41c599c91d4c5a50',1,'Todo::Task']]]
+  ['remove_0',['REMOVE',['../namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538',1,'Todo']]],
+  ['remove_1',['remove',['../class_todo_1_1_model.html#a315c55a6fb9a34bd4e41fbdec926a32a',1,'Todo::Model']]],
+  ['run_2',['run',['../class_todo_1_1_controller.html#acc3b72e113aaf34452133b0cb4160fd6',1,'Todo::Controller']]]
 ];

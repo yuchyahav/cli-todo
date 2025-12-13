@@ -8,5 +8,5 @@ var model_8h =
       [ "Todo::Status::COMPLETED", "namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35a8f7afecbc8fbc4cd0f50a57d1172482e", null ]
     ] ],
     [ "Todo::BOOST_DESCRIBE_ENUM", "namespace_todo.html#a4c42c87eab3e0bde6142a3beb62feffd", null ],
-    [ "Todo::BOOST_DESCRIBE_STRUCT", "namespace_todo.html#adaca29275cc9a35835e041c541e6e794", null ]
+    [ "Todo::BOOST_DESCRIBE_STRUCT", "namespace_todo.html#aba2f17597df6e908f1c24c14b3b14eb5", null ]
 ];

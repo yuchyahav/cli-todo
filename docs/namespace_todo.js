@@ -11,6 +11,7 @@ var namespace_todo =
       [ "ADD", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca9eeb52badb613229884838847294b90d", null ],
       [ "REMOVE", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538", null ],
       [ "CHANGE_STATUS", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47", null ],
+      [ "CHANGE_PRIO", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9", null ],
       [ "CLEAR", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec", null ],
       [ "INVALID", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],
@@ -20,5 +21,5 @@ var namespace_todo =
       [ "COMPLETED", "namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35a8f7afecbc8fbc4cd0f50a57d1172482e", null ]
     ] ],
     [ "BOOST_DESCRIBE_ENUM", "namespace_todo.html#a4c42c87eab3e0bde6142a3beb62feffd", null ],
-    [ "BOOST_DESCRIBE_STRUCT", "namespace_todo.html#adaca29275cc9a35835e041c541e6e794", null ]
+    [ "BOOST_DESCRIBE_STRUCT", "namespace_todo.html#aba2f17597df6e908f1c24c14b3b14eb5", null ]
 ];

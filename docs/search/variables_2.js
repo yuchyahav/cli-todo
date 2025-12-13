@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status_0',['status',['../struct_todo_1_1_task.html#ada7c8bbfa711c17f41c599c91d4c5a50',1,'Todo::Task']]]
+  ['prio_0',['prio',['../struct_todo_1_1_task.html#a78e1eac4400a1c649bd627f258acdb01',1,'Todo::Task']]]
 ];

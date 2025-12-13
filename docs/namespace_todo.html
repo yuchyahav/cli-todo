@@ -113,15 +113,16 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538">REMOVE</a> = 2
 , <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47">CHANGE_STATUS</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec">CLEAR</a> = 4
-, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223">INVALID</a> = 5
+&#160;&#160;<a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9">CHANGE_PRIO</a> = 4
+, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec">CLEAR</a> = 5
+, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223">INVALID</a> = 6
 <br />
  }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4c42c87eab3e0bde6142a3beb62feffd" id="r_a4c42c87eab3e0bde6142a3beb62feffd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c42c87eab3e0bde6142a3beb62feffd">BOOST_DESCRIBE_ENUM</a> (<a class="el" href="#a6f0eae131c5da4bc408d1f8109790a35">Status</a>, NOT_STARTED, IN_PROGRESS, COMPLETED)</td></tr>
-<tr class="memitem:adaca29275cc9a35835e041c541e6e794" id="r_adaca29275cc9a35835e041c541e6e794"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaca29275cc9a35835e041c541e6e794">BOOST_DESCRIBE_STRUCT</a> (<a class="el" href="struct_todo_1_1_task.html">Task</a>,(),(desc, child_tasks, status))</td></tr>
+<tr class="memitem:aba2f17597df6e908f1c24c14b3b14eb5" id="r_aba2f17597df6e908f1c24c14b3b14eb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba2f17597df6e908f1c24c14b3b14eb5">BOOST_DESCRIBE_STRUCT</a> (<a class="el" href="struct_todo_1_1_task.html">Task</a>,(),(desc, child_tasks, prio, status))</td></tr>
 </table>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
 <a id="a1e8c06410e6dedcc2b8bd5c4d1145a3c" name="a1e8c06410e6dedcc2b8bd5c4d1145a3c"></a>
@@ -148,6 +149,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca9eeb52badb613229884838847294b90d" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca9eeb52badb613229884838847294b90d"></a>ADD&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538"></a>REMOVE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47" name="a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47"></a>CHANGE_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9"></a>CHANGE_PRIO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec"></a>CLEAR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223" name="a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223"></a>INVALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -213,8 +215,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adaca29275cc9a35835e041c541e6e794" name="adaca29275cc9a35835e041c541e6e794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaca29275cc9a35835e041c541e6e794">&#9670;&#160;</a></span>BOOST_DESCRIBE_STRUCT()</h2>
+<a id="aba2f17597df6e908f1c24c14b3b14eb5" name="aba2f17597df6e908f1c24c14b3b14eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2f17597df6e908f1c24c14b3b14eb5">&#9670;&#160;</a></span>BOOST_DESCRIBE_STRUCT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +234,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(desc, child_tasks, status)</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+          <td class="paramtype">(desc, child_tasks, prio, status)</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
