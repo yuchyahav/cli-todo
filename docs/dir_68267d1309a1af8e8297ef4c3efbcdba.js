@@ -1,13 +1,8 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
-    [ "basic_view.cpp", "basic__view_8cpp.html", "basic__view_8cpp" ],
-    [ "basic_view.h", "basic__view_8h.html", "basic__view_8h" ],
-    [ "controller.cpp", "controller_8cpp.html", null ],
-    [ "controller.h", "controller_8h.html", "controller_8h" ],
-    [ "i_view.cpp", "i__view_8cpp.html", null ],
-    [ "i_view.h", "i__view_8h.html", "i__view_8h" ],
-    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "model.cpp", "model_8cpp.html", null ],
-    [ "model.h", "model_8h.html", "model_8h" ],
-    [ "view.h", "view_8h.html", "view_8h" ]
+    [ "controller", "dir_41ef5d8a90b9cc03a02949a5c062e6f0.html", "dir_41ef5d8a90b9cc03a02949a5c062e6f0" ],
+    [ "misc", "dir_88826aa2a10e1882b573f502bc7f4b55.html", "dir_88826aa2a10e1882b573f502bc7f4b55" ],
+    [ "model", "dir_5dd65160827af56e6353642206b80129.html", "dir_5dd65160827af56e6353642206b80129" ],
+    [ "view", "dir_b39b5091e8d1d2be4b7fc59d57749634.html", "dir_b39b5091e8d1d2be4b7fc59d57749634" ],
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ]
 ];

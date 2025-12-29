@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cli-todo: src/i_view.h Source File</title>
+<title>cli-todo: src/view/i_view.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,44 +97,43 @@ $(function(){initNavTree('i__view_8h_source.html','',''); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="view_8h.html">view.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_todo.html">Todo</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_todo_1_1_i_view.html">    9</a></span><span class="keyword">class </span><a class="code hl_function" href="class_todo_1_1_i_view.html#a795309fefaa321508e8037cb78dbfde8">IView</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_todo_1_1_view.html#a033493cc302c13f05d8b93a2745c2472">View</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  WINDOW *menu_win_;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  WINDOW *list_win_;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  WINDOW *list_pad_;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">int</span> scroll_offset_;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">int</span> list_height_;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">int</span> list_width_;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_function" href="class_todo_1_1_i_view.html#a795309fefaa321508e8037cb78dbfde8">IView</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_function" href="class_todo_1_1_i_view.html#a76390ce3cd6b7c935ffe92f53bd7cb32">~IView</a>();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_todo_1_1_i_view.html#ac733a402fff28fdb8aa1c17e547a37c0">get_input</a>(<span class="keyword">const</span> std::string &amp;msg) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_todo_1_1_i_view.html#ac32d0ceecf7c57768ae724da0a932675">display_list</a>(<span class="keyword">const</span> std::vector&lt;Todo::Task&gt; &amp;todo_list,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                            <span class="keywordtype">size_t</span> level = 0) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_todo_1_1_i_view.html#ae7713072a95a3b637f6b5760b5264622">display_msg</a>(<span class="keyword">const</span> std::string &amp;msg) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> refresh_list_view();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_todo.html">Todo</a> {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_todo_1_1_i_view.html">    8</a></span><span class="keyword">class </span><a class="code hl_function" href="class_todo_1_1_i_view.html#a795309fefaa321508e8037cb78dbfde8">IView</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_todo_1_1_view.html#a033493cc302c13f05d8b93a2745c2472">View</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    WINDOW *menu_win_;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    WINDOW *list_win_;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    WINDOW *list_pad_;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> scroll_offset_;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">int</span> list_height_;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> list_width_;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="class_todo_1_1_i_view.html#a795309fefaa321508e8037cb78dbfde8">IView</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="class_todo_1_1_i_view.html#a76390ce3cd6b7c935ffe92f53bd7cb32">~IView</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_todo_1_1_user_input.html">UserInput</a> <a class="code hl_function" href="class_todo_1_1_i_view.html#a830131990abc31e71cc93dc02b11c0e1">get_input</a>(<span class="keyword">const</span> std::string &amp;msg) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_todo_1_1_i_view.html#a1fecd31cd2f081f5357b566108b79098">display_list</a>(<span class="keyword">const</span> std::vector&lt;Task&gt; &amp;todo_list, <a class="code hl_typedef" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> level = 0) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_todo_1_1_i_view.html#ae7713072a95a3b637f6b5760b5264622">display_msg</a>(<span class="keyword">const</span> std::string &amp;msg) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> refresh_list_view();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}  <span class="comment">// namespace Todo</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace Todo</span></div>
+<div class="ttc" id="aclass_todo_1_1_i_view_html_a1fecd31cd2f081f5357b566108b79098"><div class="ttname"><a href="class_todo_1_1_i_view.html#a1fecd31cd2f081f5357b566108b79098">Todo::IView::display_list</a></div><div class="ttdeci">virtual void display_list(const std::vector&lt; Task &gt; &amp;todo_list, u16 level=0) override</div><div class="ttdoc">Display task list to screen.</div><div class="ttdef"><b>Definition</b> i_view.cpp:106</div></div>
 <div class="ttc" id="aclass_todo_1_1_i_view_html_a76390ce3cd6b7c935ffe92f53bd7cb32"><div class="ttname"><a href="class_todo_1_1_i_view.html#a76390ce3cd6b7c935ffe92f53bd7cb32">Todo::IView::~IView</a></div><div class="ttdeci">~IView()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> i_view.cpp:39</div></div>
 <div class="ttc" id="aclass_todo_1_1_i_view_html_a795309fefaa321508e8037cb78dbfde8"><div class="ttname"><a href="class_todo_1_1_i_view.html#a795309fefaa321508e8037cb78dbfde8">Todo::IView::IView</a></div><div class="ttdeci">IView()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> i_view.cpp:12</div></div>
-<div class="ttc" id="aclass_todo_1_1_i_view_html_ac32d0ceecf7c57768ae724da0a932675"><div class="ttname"><a href="class_todo_1_1_i_view.html#ac32d0ceecf7c57768ae724da0a932675">Todo::IView::display_list</a></div><div class="ttdeci">virtual void display_list(const std::vector&lt; Todo::Task &gt; &amp;todo_list, size_t level=0) override</div><div class="ttdoc">Display task list to screen.</div><div class="ttdef"><b>Definition</b> i_view.cpp:119</div></div>
-<div class="ttc" id="aclass_todo_1_1_i_view_html_ac733a402fff28fdb8aa1c17e547a37c0"><div class="ttname"><a href="class_todo_1_1_i_view.html#ac733a402fff28fdb8aa1c17e547a37c0">Todo::IView::get_input</a></div><div class="ttdeci">virtual std::string get_input(const std::string &amp;msg) override</div><div class="ttdoc">Gets input from the user.</div><div class="ttdef"><b>Definition</b> i_view.cpp:52</div></div>
-<div class="ttc" id="aclass_todo_1_1_i_view_html_ae7713072a95a3b637f6b5760b5264622"><div class="ttname"><a href="class_todo_1_1_i_view.html#ae7713072a95a3b637f6b5760b5264622">Todo::IView::display_msg</a></div><div class="ttdeci">virtual void display_msg(const std::string &amp;msg) override</div><div class="ttdoc">Display message to screen.</div><div class="ttdef"><b>Definition</b> i_view.cpp:175</div></div>
-<div class="ttc" id="aclass_todo_1_1_view_html_a033493cc302c13f05d8b93a2745c2472"><div class="ttname"><a href="class_todo_1_1_view.html#a033493cc302c13f05d8b93a2745c2472">Todo::View::View</a></div><div class="ttdeci">View()=default</div></div>
-<div class="ttc" id="anamespace_todo_html"><div class="ttname"><a href="namespace_todo.html">Todo</a></div><div class="ttdef"><b>Definition</b> basic_view.h:6</div></div>
+<div class="ttc" id="aclass_todo_1_1_i_view_html_a830131990abc31e71cc93dc02b11c0e1"><div class="ttname"><a href="class_todo_1_1_i_view.html#a830131990abc31e71cc93dc02b11c0e1">Todo::IView::get_input</a></div><div class="ttdeci">virtual UserInput get_input(const std::string &amp;msg) override</div><div class="ttdoc">Gets input from the user.</div><div class="ttdef"><b>Definition</b> i_view.cpp:52</div></div>
+<div class="ttc" id="aclass_todo_1_1_i_view_html_ae7713072a95a3b637f6b5760b5264622"><div class="ttname"><a href="class_todo_1_1_i_view.html#ae7713072a95a3b637f6b5760b5264622">Todo::IView::display_msg</a></div><div class="ttdeci">virtual void display_msg(const std::string &amp;msg) override</div><div class="ttdoc">Display message to screen.</div><div class="ttdef"><b>Definition</b> i_view.cpp:158</div></div>
+<div class="ttc" id="aclass_todo_1_1_view_html_a033493cc302c13f05d8b93a2745c2472"><div class="ttname"><a href="class_todo_1_1_view.html#a033493cc302c13f05d8b93a2745c2472">Todo::View::View</a></div><div class="ttdeci">View()=default</div><div class="ttdoc">Default Constructor.</div></div>
+<div class="ttc" id="anamespace_todo_html"><div class="ttname"><a href="namespace_todo.html">Todo</a></div><div class="ttdef"><b>Definition</b> controller.cpp:13</div></div>
+<div class="ttc" id="anamespace_todo_html_a0f033048846c82ded9882f3706ba4dc5"><div class="ttname"><a href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">Todo::u16</a></div><div class="ttdeci">uint16_t u16</div><div class="ttdef"><b>Definition</b> types.h:12</div></div>
+<div class="ttc" id="astruct_todo_1_1_user_input_html"><div class="ttname"><a href="struct_todo_1_1_user_input.html">Todo::UserInput</a></div><div class="ttdef"><b>Definition</b> user_input.h:6</div></div>
 <div class="ttc" id="aview_8h_html"><div class="ttname"><a href="view_8h.html">view.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +141,7 @@ $(function(){initNavTree('i__view_8h_source.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="i__view_8h.html">i_view.h</a></li>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b39b5091e8d1d2be4b7fc59d57749634.html">view</a></li><li class="navelem"><a href="i__view_8h.html">i_view.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

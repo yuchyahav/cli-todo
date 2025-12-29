@@ -29,23 +29,19 @@ Collaboration diagram for Todo\+::Basic\+View\+:
 \item 
 \mbox{\hyperlink{class_todo_1_1_basic_view_a64631ec8054c9cc577f7585cce290d19}{Basic\+View}} ()=default
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
-virtual std\+::string \mbox{\hyperlink{class_todo_1_1_basic_view_af00abc1d3e78478ace865ced37844cfb}{get\+\_\+input}} (const std\+::string \&msg) override
+virtual \mbox{\hyperlink{struct_todo_1_1_user_input}{User\+Input}} \mbox{\hyperlink{class_todo_1_1_basic_view_af8fe2a585003707c78846ba1951f3bac}{get\+\_\+input}} (const std\+::string \&msg) override
 \begin{DoxyCompactList}\small\item\em Gets input from the user. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_todo_1_1_basic_view_a835fa2003b50f26554f097ca851c4fbb}{display\+\_\+list}} (const std\+::vector$<$ \mbox{\hyperlink{struct_todo_1_1_task}{Todo\+::\+Task}} $>$ \&todo\+\_\+list, size\+\_\+t level=0) override
+virtual void \mbox{\hyperlink{class_todo_1_1_basic_view_a82bde59582fef0ac2d9ec033c6733989}{display\+\_\+list}} (const std\+::vector$<$ \mbox{\hyperlink{struct_todo_1_1_task}{Task}} $>$ \&todo\+\_\+list, \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} level=0) override
 \begin{DoxyCompactList}\small\item\em Display {\ttfamily task} list to screen. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_todo_1_1_basic_view_ae45b27e6b5f67177c3738a238670af0c}{display\+\_\+msg}} (const std\+::string \&msg) override
 \begin{DoxyCompactList}\small\item\em Display {\ttfamily message} to screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_todo_1_1_view}{Todo\+::\+View}}}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{class_todo_1_1_view_af0fd76b852f039fb6445894080f8086d}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=default
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_todo_1_1_view}{Todo\+::\+View}}}
-\begin{DoxyCompactItemize}
-\item 
 \mbox{\hyperlink{class_todo_1_1_view_a033493cc302c13f05d8b93a2745c2472}{View}} ()=default
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_todo_1_1_view_af0fd76b852f039fb6445894080f8086d}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-constructors}
@@ -66,11 +62,11 @@ Default constructor.
 \label{doc-func-members}
 \Hypertarget{class_todo_1_1_basic_view_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_todo_1_1_basic_view_a835fa2003b50f26554f097ca851c4fbb}\index{Todo::BasicView@{Todo::BasicView}!display\_list@{display\_list}}
+\Hypertarget{class_todo_1_1_basic_view_a82bde59582fef0ac2d9ec033c6733989}\index{Todo::BasicView@{Todo::BasicView}!display\_list@{display\_list}}
 \index{display\_list@{display\_list}!Todo::BasicView@{Todo::BasicView}}
 \doxysubsubsection{\texorpdfstring{display\_list()}{display\_list()}}
-{\footnotesize\ttfamily \label{class_todo_1_1_basic_view_a835fa2003b50f26554f097ca851c4fbb} 
-void Todo\+::\+Basic\+View\+::display\+\_\+list (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_todo_1_1_task}{Todo\+::\+Task}} $>$ \&}]{todo\+\_\+list}{, }\item[{size\+\_\+t}]{level}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_todo_1_1_basic_view_a82bde59582fef0ac2d9ec033c6733989} 
+void Todo\+::\+Basic\+View\+::display\+\_\+list (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_todo_1_1_task}{Task}} $>$ \&}]{todo\+\_\+list}{, }\item[{\mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}}}]{level}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -85,7 +81,7 @@ Display {\ttfamily task} list to screen.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{class_todo_1_1_view_a0e73623fc4934765ad94f0fecbf80395}{Todo\+::\+View}}.
+Implements \mbox{\hyperlink{class_todo_1_1_view_a14bf93feb65cbe98e21413591b69126e}{Todo\+::\+View}}.
 
 \Hypertarget{class_todo_1_1_basic_view_ae45b27e6b5f67177c3738a238670af0c}\index{Todo::BasicView@{Todo::BasicView}!display\_msg@{display\_msg}}
 \index{display\_msg@{display\_msg}!Todo::BasicView@{Todo::BasicView}}
@@ -106,11 +102,11 @@ Display {\ttfamily message} to screen.
 
 Implements \mbox{\hyperlink{class_todo_1_1_view_a98e04233fdab66c1cee1d07358b93dc8}{Todo\+::\+View}}.
 
-\Hypertarget{class_todo_1_1_basic_view_af00abc1d3e78478ace865ced37844cfb}\index{Todo::BasicView@{Todo::BasicView}!get\_input@{get\_input}}
+\Hypertarget{class_todo_1_1_basic_view_af8fe2a585003707c78846ba1951f3bac}\index{Todo::BasicView@{Todo::BasicView}!get\_input@{get\_input}}
 \index{get\_input@{get\_input}!Todo::BasicView@{Todo::BasicView}}
 \doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
-{\footnotesize\ttfamily \label{class_todo_1_1_basic_view_af00abc1d3e78478ace865ced37844cfb} 
-std\+::string Todo\+::\+Basic\+View\+::get\+\_\+input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_todo_1_1_basic_view_af8fe2a585003707c78846ba1951f3bac} 
+\mbox{\hyperlink{struct_todo_1_1_user_input}{User\+Input}} Todo\+::\+Basic\+View\+::get\+\_\+input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -123,11 +119,11 @@ Gets input from the user.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{class_todo_1_1_view_a23d42a726090b73b7ec7029b6dcca9bc}{Todo\+::\+View}}.
+Implements \mbox{\hyperlink{class_todo_1_1_view_a2be8bc81a8b1a70877d1f7eb32c9fe74}{Todo\+::\+View}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\mbox{\hyperlink{basic__view_8h}{basic\+\_\+view.\+h}}\item 
-src/\mbox{\hyperlink{basic__view_8cpp}{basic\+\_\+view.\+cpp}}\end{DoxyCompactItemize}
+src/view/\mbox{\hyperlink{basic__view_8h}{basic\+\_\+view.\+h}}\item 
+src/view/\mbox{\hyperlink{basic__view_8cpp}{basic\+\_\+view.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['view_0',['View',['../class_todo_1_1_view.html#a033493cc302c13f05d8b93a2745c2472',1,'Todo::View']]]
+  ['save_5ffile_0',['save_file',['../class_todo_1_1_model.html#ae49b88f0a7c502dd41722d99da22d8ab',1,'Todo::Model']]]
 ];

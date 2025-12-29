@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['save_5ffile_0',['save_file',['../class_todo_1_1_model.html#ae49b88f0a7c502dd41722d99da22d8ab',1,'Todo::Model']]]
+  ['remove_0',['remove',['../class_todo_1_1_model.html#afb2a642878a1b92cc475168a3844c8fa',1,'Todo::Model']]],
+  ['run_1',['run',['../class_todo_1_1_controller.html#acc3b72e113aaf34452133b0cb4160fd6',1,'Todo::Controller']]]
 ];

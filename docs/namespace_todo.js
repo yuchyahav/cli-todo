@@ -1,11 +1,21 @@
 var namespace_todo =
 [
-    [ "BasicView", "class_todo_1_1_basic_view.html", "class_todo_1_1_basic_view" ],
     [ "Controller", "class_todo_1_1_controller.html", "class_todo_1_1_controller" ],
-    [ "IView", "class_todo_1_1_i_view.html", "class_todo_1_1_i_view" ],
     [ "Task", "struct_todo_1_1_task.html", "struct_todo_1_1_task" ],
+    [ "UserInput", "struct_todo_1_1_user_input.html", "struct_todo_1_1_user_input" ],
     [ "Model", "class_todo_1_1_model.html", "class_todo_1_1_model" ],
+    [ "BasicView", "class_todo_1_1_basic_view.html", "class_todo_1_1_basic_view" ],
+    [ "IView", "class_todo_1_1_i_view.html", "class_todo_1_1_i_view" ],
+    [ "ViView", "class_todo_1_1_vi_view.html", "class_todo_1_1_vi_view" ],
     [ "View", "class_todo_1_1_view.html", "class_todo_1_1_view" ],
+    [ "i16", "namespace_todo.html#a7413b4ab831f20dd58ad1fb6e10fbb61", null ],
+    [ "i32", "namespace_todo.html#a563eb338d2492390470b62c97725f5e3", null ],
+    [ "i64", "namespace_todo.html#a971b6615cbbbe5414b79a5340feeda24", null ],
+    [ "i8", "namespace_todo.html#a058fb89c7da9a964e57a03a90b7ded80", null ],
+    [ "u16", "namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5", null ],
+    [ "u32", "namespace_todo.html#a3b77bdac100a12793978789c7afcd1b4", null ],
+    [ "u64", "namespace_todo.html#a2ec92f9087d1f887d2ad57b5cb00b186", null ],
+    [ "u8", "namespace_todo.html#a6bf1a7e8c46fa7e85101f3f48f33b373", null ],
     [ "MenuOptions", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3c", [
       [ "EXIT", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3caa42b2fb0e720a080e79a92f4ca97d927", null ],
       [ "ADD", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca9eeb52badb613229884838847294b90d", null ],
@@ -15,11 +25,14 @@ var namespace_todo =
       [ "CLEAR", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec", null ],
       [ "INVALID", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],
-    [ "Status", "namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35", [
-      [ "NOT_STARTED", "namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35a06972acc3aafeb3a65dbd996c8dedc73", null ],
-      [ "IN_PROGRESS", "namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35aca69f96c768067fbff6c911ca87bccc9", null ],
-      [ "COMPLETED", "namespace_todo.html#a6f0eae131c5da4bc408d1f8109790a35a8f7afecbc8fbc4cd0f50a57d1172482e", null ]
+    [ "Status", "namespace_todo.html#a83cf0624dcf41c74f122b20799a844f6", [
+      [ "NOT_STARTED", "namespace_todo.html#a83cf0624dcf41c74f122b20799a844f6a06972acc3aafeb3a65dbd996c8dedc73", null ],
+      [ "IN_PROGRESS", "namespace_todo.html#a83cf0624dcf41c74f122b20799a844f6aca69f96c768067fbff6c911ca87bccc9", null ],
+      [ "COMPLETED", "namespace_todo.html#a83cf0624dcf41c74f122b20799a844f6a8f7afecbc8fbc4cd0f50a57d1172482e", null ]
     ] ],
     [ "BOOST_DESCRIBE_ENUM", "namespace_todo.html#a4c42c87eab3e0bde6142a3beb62feffd", null ],
-    [ "BOOST_DESCRIBE_STRUCT", "namespace_todo.html#aba2f17597df6e908f1c24c14b3b14eb5", null ]
+    [ "BOOST_DESCRIBE_STRUCT", "namespace_todo.html#aba2f17597df6e908f1c24c14b3b14eb5", null ],
+    [ "clear_input_buf", "namespace_todo.html#a55a5df34f84fbef3cf918b3b7a175c79", null ],
+    [ "pre_order_trav", "namespace_todo.html#a42f6ee3e71cc2e80081e5983e742a92f", null ],
+    [ "SEN", "namespace_todo.html#aa63f219aa3f7adcccb98d3e6429b9355", null ]
 ];

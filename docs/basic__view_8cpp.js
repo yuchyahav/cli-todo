@@ -1,4 +1,4 @@
 var basic__view_8cpp =
 [
-    [ "clear_input_buf", "basic__view_8cpp.html#a685f46974ef21422eec08d101edf0bf0", null ]
+    [ "Todo::clear_input_buf", "namespace_todo.html#a55a5df34f84fbef3cf918b3b7a175c79", null ]
 ];

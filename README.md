@@ -23,7 +23,7 @@ MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from
 
 * Hierarchical Tasks: Task structs contain a vector of children, enabling infinite nesting.
 * Persistence: Auto-saves/loads to .todo/todo_list.json to prevent data loss.
-* Dual Interface: Run with -b for basic mode or -i for a slightly more interactive moe or default to the Vi-like windowed interface.
+* Multi-Interface: Run with -b for basic mode or -i for a slightly more interactive moe or default to the Vi-like windowed interface.
 
 ## Roadmap
 
