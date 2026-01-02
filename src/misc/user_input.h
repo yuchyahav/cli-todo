@@ -4,7 +4,7 @@
 
 namespace Todo {
 struct UserInput {
-    std::string text;
-    bool vi_mode;
+  std::string text;
+  bool vi_mode;
 };
 }  // namespace Todo

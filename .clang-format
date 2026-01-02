@@ -1,6 +1,6 @@
 ---
 Language:        Cpp
-AccessModifierOffset: -4
+AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: None
 AlignConsecutiveAssignments:
@@ -134,8 +134,8 @@ BreakTemplateDeclarations: Yes
 ColumnLimit:     90
 CommentPragmas:  '^ IWYU pragma:'
 CompactNamespaces: false
-ConstructorInitializerIndentWidth: 4
-ContinuationIndentWidth: 4
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 2
 Cpp11BracedListStyle: true
 DerivePointerAlignment: false
 DisableFormat:   false
@@ -178,7 +178,7 @@ IndentExternBlock: AfterExternBlock
 IndentGotoLabels: true
 IndentPPDirectives: None
 IndentRequiresClause: true
-IndentWidth:     4
+IndentWidth:     2
 IndentWrappedFunctionNames: false
 InsertBraces:    false
 InsertNewlineAtEOF: false
@@ -205,7 +205,7 @@ MainIncludeChar: Quote
 MaxEmptyLinesToKeep: 1
 NamespaceIndentation: None
 ObjCBinPackProtocolList: Never
-ObjCBlockIndentWidth: 4
+ObjCBlockIndentWidth: 2
 ObjCBreakBeforeNestedBlockParam: true
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: true

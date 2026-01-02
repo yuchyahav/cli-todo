@@ -31,21 +31,21 @@ IView::IView()
   scroll_offset_ = 0;
 
   list_pad_ = newpad(1000, width - 2);
-  list_win_ = newwin(list_height_, width, 0, 0);
+  list_border_ = newwin(list_height_, width, 0, 0);
   menu_win_ = newwin(menu_height, width, list_height_, 0);
 
   keypad(menu_win_, true);
 
-  wclear(list_win_);
-  box(list_win_, 0, 0);
-  mvwprintw(list_win_, 1, 2, "=== Todo List ===");
-  wrefresh(list_win_);
+  wclear(list_border_);
+  box(list_border_, 0, 0);
+  mvwprintw(list_border_, 1, 2, "=== Todo List ===");
+  wrefresh(list_border_);
 }
 
 IView::~IView()
 {
   delwin(list_pad_);
-  delwin(list_win_);
+  delwin(list_border_);
   delwin(menu_win_);
   endwin();
 }
