@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['text_0',['text',['../struct_todo_1_1_user_input.html#ad9223eb2204b1fe2e5d3331f11e04c4d',1,'Todo::UserInput']]]
+  ['priority_0',['priority',['../struct_todo_1_1_task.html#aa86b5177a3351fd559525e8cb276d3e7',1,'Todo::Task']]]
 ];

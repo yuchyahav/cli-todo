@@ -11,9 +11,9 @@ private:
   WINDOW *list_border_;  ///< Curses window to display a border around the list.
   WINDOW *list_pad_;     ///< Curses pad(scroll) to display the list.
 
-  int scroll_offset_;
-  int list_height_;
-  int list_width_;
+  int scroll_offset_;  ///< Number of y scrolls.
+  int list_height_;    ///< Height of the list pad.
+  int list_width_;     ///< Width of the list pad.
 
 public:
   /// \brief Default constructor.
@@ -26,12 +26,12 @@ public:
   /// \param msg String to display.
   virtual UserInput get_input(const std::string &msg) override;
 
-  /// \brief Display @p task list to screen.
+  /// \brief Display task list to screen.
   /// \param todo_list Const reference to a vector.
   /// \param level Recursion depth.
   virtual void display_list(const std::vector<Task> &todo_list, u16 level = 0) override;
 
-  /// \brief Display @p message to screen.
+  /// \brief Display message to screen.
   /// \param msg String to display.
   virtual void display_msg(const std::string &msg) override;
 

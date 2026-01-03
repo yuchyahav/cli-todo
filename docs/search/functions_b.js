@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['view_0',['View',['../class_todo_1_1_view.html#a033493cc302c13f05d8b93a2745c2472',1,'Todo::View']]],
-  ['viview_1',['ViView',['../class_todo_1_1_vi_view.html#a1c5457e13d307ad4227174b5256c9e3f',1,'Todo::ViView']]]
+  ['remove_0',['remove',['../class_todo_1_1_model.html#afb2a642878a1b92cc475168a3844c8fa',1,'Todo::Model']]],
+  ['removeaction_1',['RemoveAction',['../class_todo_1_1_remove_action.html#a7f6ad1f94f0ca385f957df1ae9774b74',1,'Todo::RemoveAction']]],
+  ['run_2',['run',['../class_todo_1_1_controller.html#acc3b72e113aaf34452133b0cb4160fd6',1,'Todo::Controller']]]
 ];

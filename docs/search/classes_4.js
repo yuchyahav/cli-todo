@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task_0',['Task',['../struct_todo_1_1_task.html',1,'Todo']]]
+  ['model_0',['Model',['../class_todo_1_1_model.html',1,'Todo']]]
 ];

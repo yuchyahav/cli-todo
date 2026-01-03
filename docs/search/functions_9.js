@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['remove_0',['remove',['../class_todo_1_1_model.html#afb2a642878a1b92cc475168a3844c8fa',1,'Todo::Model']]],
-  ['run_1',['run',['../class_todo_1_1_controller.html#acc3b72e113aaf34452133b0cb4160fd6',1,'Todo::Controller']]]
+  ['operator_21_3d_0',['operator!=',['../struct_todo_1_1_task.html#a5a131ec9a3ddb67d01c56953e2996550',1,'Todo::Task']]],
+  ['operator_3d_3d_1',['operator==',['../struct_todo_1_1_task.html#a0cd650de56bc8b3759602572c0a46caf',1,'Todo::Task']]]
 ];

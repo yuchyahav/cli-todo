@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userinput_0',['UserInput',['../struct_todo_1_1_user_input.html',1,'Todo']]]
+  ['prioritychangeaction_0',['PriorityChangeAction',['../class_todo_1_1_priority_change_action.html',1,'Todo']]]
 ];

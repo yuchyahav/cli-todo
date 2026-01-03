@@ -15,6 +15,32 @@ struct Task {
     IN_PROGRESS = 2,
     COMPLETED = 3
   } status;  ///< Completion status of the task.
+
+  bool operator==(const Task &other) const
+  {
+    if (desc != other.desc) {
+      return false;
+    }
+
+    if (priority != other.priority) {
+      return false;
+    }
+
+    if (status != other.status) {
+      return false;
+    }
+
+    if (child_tasks != other.child_tasks) {
+      return false;
+    }
+
+    return true;
+  }
+
+  bool operator!=(const Task &other) const
+  {
+    return not(*this == other);
+  }
 };
 
 BOOST_DESCRIBE_ENUM(Task::Status, NOT_STARTED, IN_PROGRESS, COMPLETED);

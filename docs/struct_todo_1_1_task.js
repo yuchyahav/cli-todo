@@ -5,6 +5,8 @@ var struct_todo_1_1_task =
       [ "IN_PROGRESS", "struct_todo_1_1_task.html#a0dc2492f114687879f5a40951ed832e6aca69f96c768067fbff6c911ca87bccc9", null ],
       [ "COMPLETED", "struct_todo_1_1_task.html#a0dc2492f114687879f5a40951ed832e6a8f7afecbc8fbc4cd0f50a57d1172482e", null ]
     ] ],
+    [ "operator!=", "struct_todo_1_1_task.html#a5a131ec9a3ddb67d01c56953e2996550", null ],
+    [ "operator==", "struct_todo_1_1_task.html#a0cd650de56bc8b3759602572c0a46caf", null ],
     [ "child_tasks", "struct_todo_1_1_task.html#a833b66e773aaf760f6afc6a7a7c4a2af", null ],
     [ "desc", "struct_todo_1_1_task.html#a854772d87122caf5a24e6485d9f76243", null ],
     [ "priority", "struct_todo_1_1_task.html#aa86b5177a3351fd559525e8cb276d3e7", null ],

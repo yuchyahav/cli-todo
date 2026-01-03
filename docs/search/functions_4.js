@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['get_5finput_0',['get_input',['../class_todo_1_1_basic_view.html#af8fe2a585003707c78846ba1951f3bac',1,'Todo::BasicView::get_input()'],['../class_todo_1_1_i_view.html#a830131990abc31e71cc93dc02b11c0e1',1,'Todo::IView::get_input()'],['../class_todo_1_1_vi_view.html#af810b372249e855ff6414cf848a6cf8e',1,'Todo::ViView::get_input()'],['../class_todo_1_1_view.html#a2be8bc81a8b1a70877d1f7eb32c9fe74',1,'Todo::View::get_input()']]],
-  ['get_5flist_1',['get_list',['../class_todo_1_1_model.html#a50b70726c7df83c3f1e610f20b317b55',1,'Todo::Model']]]
+  ['execute_0',['execute',['../class_todo_1_1_action.html#a9fe4b63ff3faa3e414e23b97510515f3',1,'Todo::Action::execute()'],['../class_todo_1_1_remove_action.html#a93b7af284172a97d39b0c19766344496',1,'Todo::RemoveAction::execute()'],['../class_todo_1_1_add_action.html#aba31c5ba1abaff724f83c8a2d1f41680',1,'Todo::AddAction::execute()'],['../class_todo_1_1_status_change_action.html#ab0d9fffb24efa9601294bc1d17e61a24',1,'Todo::StatusChangeAction::execute()'],['../class_todo_1_1_priority_change_action.html#a670ed556c5588d0766ac3b4e4388f11f',1,'Todo::PriorityChangeAction::execute()']]]
 ];

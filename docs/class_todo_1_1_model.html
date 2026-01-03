@@ -100,7 +100,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8841ad8e5ec2bc99cb485d89fc9664dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object by reading from a JSON file.  <br /></td></tr>
 <tr class="memitem:ab09056d9c1ef4c457dfef12e6456b918" id="r_ab09056d9c1ef4c457dfef12e6456b918"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab09056d9c1ef4c457dfef12e6456b918">dir_init</a> ()</td></tr>
 <tr class="memdesc:ab09056d9c1ef4c457dfef12e6456b918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the .todo directory and its contents.  <br /></td></tr>
-<tr class="memitem:adf6412942b84b0f09bb8668e1dd1f46a" id="r_adf6412942b84b0f09bb8668e1dd1f46a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf6412942b84b0f09bb8668e1dd1f46a">add</a> (const std::string &amp;item_desc, const <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> priority, const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path)</td></tr>
+<tr class="memitem:a983fa4b2201b61fa08996e1b712e8fbb" id="r_a983fa4b2201b61fa08996e1b712e8fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a983fa4b2201b61fa08996e1b712e8fbb">add</a> (<a class="el" href="struct_todo_1_1_task.html">Task</a> task, const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path)</td></tr>
 <tr class="memitem:afb2a642878a1b92cc475168a3844c8fa" id="r_afb2a642878a1b92cc475168a3844c8fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb2a642878a1b92cc475168a3844c8fa">remove</a> (const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path)</td></tr>
 <tr class="memitem:a7679bf3b9aa98c25c5a69e18cd98aaa9" id="r_a7679bf3b9aa98c25c5a69e18cd98aaa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7679bf3b9aa98c25c5a69e18cd98aaa9">clear</a> ()</td></tr>
 <tr class="memdesc:a7679bf3b9aa98c25c5a69e18cd98aaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears (empties) the list.  <br /></td></tr>
@@ -108,10 +108,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a49807a73c39106f4b5e148f02fa363a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from a JSON file to populate todo list vector.  <br /></td></tr>
 <tr class="memitem:ae49b88f0a7c502dd41722d99da22d8ab" id="r_ae49b88f0a7c502dd41722d99da22d8ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae49b88f0a7c502dd41722d99da22d8ab">save_file</a> ()</td></tr>
 <tr class="memdesc:ae49b88f0a7c502dd41722d99da22d8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save todo list vector to a JSON file.  <br /></td></tr>
-<tr class="memitem:aa01a8a5d9a24542c4ba86eaacb67f471" id="r_aa01a8a5d9a24542c4ba86eaacb67f471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01a8a5d9a24542c4ba86eaacb67f471">change_task_status</a> (const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path, const int status)</td></tr>
-<tr class="memdesc:aa01a8a5d9a24542c4ba86eaacb67f471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the completion status of <code class="param">index</code> task.  <br /></td></tr>
-<tr class="memitem:a5e5ad2b3f60037fb417b58a5624c0393" id="r_a5e5ad2b3f60037fb417b58a5624c0393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e5ad2b3f60037fb417b58a5624c0393">change_task_prio</a> (const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path, const int prio)</td></tr>
-<tr class="memdesc:a5e5ad2b3f60037fb417b58a5624c0393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the completion status of <code class="param">index</code> task.  <br /></td></tr>
+<tr class="memitem:abcf2176cb62a5ea3f201702cad6992a9" id="r_abcf2176cb62a5ea3f201702cad6992a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcf2176cb62a5ea3f201702cad6992a9">change_task_status</a> (const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path, const <a class="el" href="struct_todo_1_1_task.html#a0dc2492f114687879f5a40951ed832e6">Status</a> status)</td></tr>
+<tr class="memdesc:abcf2176cb62a5ea3f201702cad6992a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the completion status of a task.  <br /></td></tr>
+<tr class="memitem:a137904ec0d26b3ca407eca1ab048d600" id="r_a137904ec0d26b3ca407eca1ab048d600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137904ec0d26b3ca407eca1ab048d600">change_task_priority</a> (const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;path, const int priority)</td></tr>
+<tr class="memdesc:a137904ec0d26b3ca407eca1ab048d600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the completion status of a task.  <br /></td></tr>
 <tr class="memitem:a50b70726c7df83c3f1e610f20b317b55" id="r_a50b70726c7df83c3f1e610f20b317b55"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="struct_todo_1_1_task.html">Task</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50b70726c7df83c3f1e610f20b317b55">get_list</a> ()</td></tr>
 <tr class="memdesc:a50b70726c7df83c3f1e610f20b317b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference of the todo list vector.  <br /></td></tr>
 </table>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="adf6412942b84b0f09bb8668e1dd1f46a" name="adf6412942b84b0f09bb8668e1dd1f46a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf6412942b84b0f09bb8668e1dd1f46a">&#9670;&#160;</a></span>add()</h2>
+<a id="a983fa4b2201b61fa08996e1b712e8fbb" name="a983fa4b2201b61fa08996e1b712e8fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983fa4b2201b61fa08996e1b712e8fbb">&#9670;&#160;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,12 +145,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Todo::Model::add </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>item_desc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a></td>          <td class="paramname"><span class="paramname"><em>priority</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_todo_1_1_task.html">Task</a></td>          <td class="paramname"><span class="paramname"><em>task</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -159,30 +154,30 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>/brief Adds task with description <code class="param">task_desc</code> to todo list. /param task_desc Description of task to add. /param priority Priority of task to add. /param path Path of task to add. </p>
+<p>/brief Adds task with description to todo list. /param task The task to add. /param path Path of task to add. </p>
 
 </div>
 </div>
-<a id="a5e5ad2b3f60037fb417b58a5624c0393" name="a5e5ad2b3f60037fb417b58a5624c0393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e5ad2b3f60037fb417b58a5624c0393">&#9670;&#160;</a></span>change_task_prio()</h2>
+<a id="a137904ec0d26b3ca407eca1ab048d600" name="a137904ec0d26b3ca407eca1ab048d600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137904ec0d26b3ca407eca1ab048d600">&#9670;&#160;</a></span>change_task_priority()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Todo::Model::change_task_prio </td>
+          <td class="memname">void Todo::Model::change_task_priority </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5">u16</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>prio</em></span>&#160;)</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>priority</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the completion status of <code class="param">index</code> task. </p>
+<p>Changes the completion status of a task. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path of the task to change. </td></tr>
@@ -193,8 +188,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa01a8a5d9a24542c4ba86eaacb67f471" name="aa01a8a5d9a24542c4ba86eaacb67f471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01a8a5d9a24542c4ba86eaacb67f471">&#9670;&#160;</a></span>change_task_status()</h2>
+<a id="abcf2176cb62a5ea3f201702cad6992a9" name="abcf2176cb62a5ea3f201702cad6992a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf2176cb62a5ea3f201702cad6992a9">&#9670;&#160;</a></span>change_task_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,12 +202,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>status</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="struct_todo_1_1_task.html#a0dc2492f114687879f5a40951ed832e6">Status</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the completion status of <code class="param">index</code> task. </p>
+<p>Changes the completion status of a task. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path of the task to change. </td></tr>
@@ -314,7 +309,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>/brief Remove <code class="param">index</code> task from the todo list. /param path Path of the task to remove. </p>
+<p>/brief Remove task from the todo list. /param path Path of the task to remove. </p>
 
 </div>
 </div>

@@ -46,9 +46,9 @@ UserInput ViView::get_input(const std::string &msg)
       return handle_remove();
     case Mode::CHANGE:
       return handle_change();
-    case Mode::SINSERT:
+    case Mode::SIBLING_INSERT:
       return handle_insert();
-    case Mode::CINSERT:
+    case Mode::CHILD_INSERT:
       return handle_insert();
     default:
       break;
@@ -86,12 +86,18 @@ UserInput ViView::handle_normal()
         }
         break;
 
+      case 'g':
+        return {std::string(1, ch), true};
+
+      case 'u':
+        return {std::string(1, ch), true};
+
       case 'O':
-        mode_ = Mode::SINSERT;
+        mode_ = Mode::SIBLING_INSERT;
         return {std::string(1, ch), true};
 
       case 'o':
-        mode_ = Mode::CINSERT;
+        mode_ = Mode::CHILD_INSERT;
         return {std::string(1, ch), true};
 
       case 'd':
@@ -151,17 +157,17 @@ UserInput ViView::handle_insert()
 
   if (ichain_ == InsertChain::PATH) {
     ichain_ = InsertChain::PRIO;
-    if (mode_ == Mode::CINSERT) {
+    if (mode_ == Mode::CHILD_INSERT) {
       return {std::to_string(cursor_.y), true};
     } else {
       return {std::to_string(cursor_.y + 1), true};
     }
   }
 
-  if (mode_ == Mode::CINSERT && ichain_ == InsertChain::DESC) {
-    handle_cinsert();
-  } else if (mode_ == Mode::SINSERT && ichain_ == InsertChain::DESC) {
-    handle_sinsert();
+  if (mode_ == Mode::CHILD_INSERT && ichain_ == InsertChain::DESC) {
+    handle_child_insert();
+  } else if (mode_ == Mode::SIBLING_INSERT && ichain_ == InsertChain::DESC) {
+    handle_sibling_insert();
   }
   ichain_ = InsertChain::PATH;
 
@@ -195,13 +201,13 @@ UserInput ViView::handle_insert()
   return {buffer, true};
 }
 
-void ViView::handle_sinsert()
+void ViView::handle_sibling_insert()
 {
   winsertln(list_pad_);
   refresh_list_view();
 }
 
-void ViView::handle_cinsert()
+void ViView::handle_child_insert()
 {
   ++cursor_.y;
   wmove(list_pad_, cursor_.y, cursor_.x);

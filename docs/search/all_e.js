@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['u16_0',['u16',['../namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5',1,'Todo']]],
-  ['u32_1',['u32',['../namespace_todo.html#a3b77bdac100a12793978789c7afcd1b4',1,'Todo']]],
-  ['u64_2',['u64',['../namespace_todo.html#a2ec92f9087d1f887d2ad57b5cb00b186',1,'Todo']]],
-  ['u8_3',['u8',['../namespace_todo.html#a6bf1a7e8c46fa7e85101f3f48f33b373',1,'Todo']]],
-  ['user_5finput_2eh_4',['user_input.h',['../user__input_8h.html',1,'']]],
-  ['userinput_5',['UserInput',['../struct_todo_1_1_user_input.html',1,'Todo']]]
+  ['task_0',['Task',['../struct_todo_1_1_task.html',1,'Todo']]],
+  ['task_2eh_1',['task.h',['../task_8h.html',1,'']]],
+  ['text_2',['text',['../struct_todo_1_1_user_input.html#ad9223eb2204b1fe2e5d3331f11e04c4d',1,'Todo::UserInput']]],
+  ['todo_3',['Todo',['../namespace_todo.html',1,'']]],
+  ['types_2eh_4',['types.h',['../types_8h.html',1,'']]]
 ];
