@@ -11,9 +11,9 @@ private:
   WINDOW *list_border_;  ///< Curses window to display a border around the list.
   WINDOW *list_pad_;     ///< Curses pad(scroll) to display the list.
 
-  int scroll_offset_;
-  int list_height_;
-  int list_width_;
+  int scroll_offset_;  ///< Number of y scrolls.
+  int list_height_;    ///< Height of the list pad.
+  int list_width_;     ///< Width of the list pad.
 
 public:
   /// \brief Default constructor.

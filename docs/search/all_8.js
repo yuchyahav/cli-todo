@@ -6,5 +6,6 @@ var searchData=
   ['menuoptions_3',['MenuOptions',['../namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3c',1,'Todo']]],
   ['model_4',['Model',['../class_todo_1_1_model.html',1,'Todo::Model'],['../class_todo_1_1_model.html#a8841ad8e5ec2bc99cb485d89fc9664dc',1,'Todo::Model::Model()']]],
   ['model_2ecpp_5',['model.cpp',['../model_8cpp.html',1,'']]],
-  ['model_2eh_6',['model.h',['../model_8h.html',1,'']]]
+  ['model_2eh_6',['model.h',['../model_8h.html',1,'']]],
+  ['model_5f_7',['model_',['../class_todo_1_1_action.html#aae003bd997bb3485f945aaefd551eaa5',1,'Todo::Action']]]
 ];

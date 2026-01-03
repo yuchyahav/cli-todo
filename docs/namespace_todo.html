@@ -94,6 +94,11 @@ $(function(){initNavTree('namespace_todo.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:Action" id="r_Action"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo_1_1_action.html">Action</a></td></tr>
+<tr class="memitem:RemoveAction" id="r_RemoveAction"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo_1_1_remove_action.html">RemoveAction</a></td></tr>
+<tr class="memitem:AddAction" id="r_AddAction"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo_1_1_add_action.html">AddAction</a></td></tr>
+<tr class="memitem:StatusChangeAction" id="r_StatusChangeAction"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo_1_1_status_change_action.html">StatusChangeAction</a></td></tr>
+<tr class="memitem:PriorityChangeAction" id="r_PriorityChangeAction"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo_1_1_priority_change_action.html">PriorityChangeAction</a></td></tr>
 <tr class="memitem:Controller" id="r_Controller"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo_1_1_controller.html">Controller</a></td></tr>
 <tr class="memitem:Task" id="r_Task"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_todo_1_1_task.html">Task</a></td></tr>
 <tr class="memitem:UserInput" id="r_UserInput"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_todo_1_1_user_input.html">UserInput</a></td></tr>
@@ -124,8 +129,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47">CHANGE_STATUS</a> = 3
 , <br />
 &#160;&#160;<a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9">CHANGE_PRIO</a> = 4
-, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec">CLEAR</a> = 5
-, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223">INVALID</a> = 6
+, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1">UNDO</a> = 5
+, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f">REDO</a> = 6
+, <a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec">CLEAR</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223">INVALID</a> = 8
 <br />
  }</td></tr>
 </table><table class="memberdecls">
@@ -293,6 +301,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538"></a>REMOVE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47" name="a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47"></a>CHANGE_STATUS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9"></a>CHANGE_PRIO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1"></a>UNDO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f" name="a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f"></a>REDO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec" name="a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec"></a>CLEAR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223" name="a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223"></a>INVALID&#160;</td><td class="fielddoc"></td></tr>
 </table>

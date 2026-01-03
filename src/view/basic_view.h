@@ -6,9 +6,7 @@
 namespace Todo {
 class BasicView : public View {
 public:
-  ///
   /// \brief Default constructor.
-  ///
   BasicView() = default;
 
   /// \brief Gets input from the user.

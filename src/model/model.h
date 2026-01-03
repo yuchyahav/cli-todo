@@ -12,8 +12,8 @@
 namespace Todo {
 class Model {
 private:
-  const static inline std::filesystem::path TODO_DIR = ".todo";
-  const static inline std::filesystem::path TODO_FILE = "todo_list.json";
+  const static inline std::filesystem::path TODO_DIR = ".todo";  ///< Directory name.
+  const static inline std::filesystem::path TODO_FILE = "todo_list.json";  ///< File name.
 
 public:
   /// \brief Constructs an object by reading from a JSON file.

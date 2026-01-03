@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../class_todo_1_1_vi_view.html#a0fe7a8d47dd331ece739467569a373c0',1,'Todo::ViView']]]
+  ['text_0',['text',['../struct_todo_1_1_user_input.html#ad9223eb2204b1fe2e5d3331f11e04c4d',1,'Todo::UserInput']]]
 ];

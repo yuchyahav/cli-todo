@@ -1,5 +1,10 @@
 var namespace_todo =
 [
+    [ "Action", "class_todo_1_1_action.html", "class_todo_1_1_action" ],
+    [ "RemoveAction", "class_todo_1_1_remove_action.html", "class_todo_1_1_remove_action" ],
+    [ "AddAction", "class_todo_1_1_add_action.html", "class_todo_1_1_add_action" ],
+    [ "StatusChangeAction", "class_todo_1_1_status_change_action.html", "class_todo_1_1_status_change_action" ],
+    [ "PriorityChangeAction", "class_todo_1_1_priority_change_action.html", "class_todo_1_1_priority_change_action" ],
     [ "Controller", "class_todo_1_1_controller.html", "class_todo_1_1_controller" ],
     [ "Task", "struct_todo_1_1_task.html", "struct_todo_1_1_task" ],
     [ "UserInput", "struct_todo_1_1_user_input.html", "struct_todo_1_1_user_input" ],
@@ -23,6 +28,8 @@ var namespace_todo =
       [ "REMOVE", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca78baf367c4626442174307cdf41c6538", null ],
       [ "CHANGE_STATUS", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47", null ],
       [ "CHANGE_PRIO", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9", null ],
+      [ "UNDO", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1", null ],
+      [ "REDO", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f", null ],
       [ "CLEAR", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec", null ],
       [ "INVALID", "namespace_todo.html#a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],

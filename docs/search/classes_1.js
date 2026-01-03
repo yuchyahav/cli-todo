@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['controller_0',['Controller',['../class_todo_1_1_controller.html',1,'Todo']]]
+  ['basicview_0',['BasicView',['../class_todo_1_1_basic_view.html',1,'Todo']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['user_5finput_2eh_0',['user_input.h',['../user__input_8h.html',1,'']]]
+  ['task_2eh_0',['task.h',['../task_8h.html',1,'']]],
+  ['types_2eh_1',['types.h',['../types_8h.html',1,'']]]
 ];

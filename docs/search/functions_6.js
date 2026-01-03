@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['load_5ffile_0',['load_file',['../class_todo_1_1_model.html#a49807a73c39106f4b5e148f02fa363a7',1,'Todo::Model']]]
+  ['iview_0',['IView',['../class_todo_1_1_i_view.html#a795309fefaa321508e8037cb78dbfde8',1,'Todo::IView']]]
 ];

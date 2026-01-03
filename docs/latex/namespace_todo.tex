@@ -3,6 +3,16 @@
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{class_todo_1_1_action}{Action}}
+\item 
+class \mbox{\hyperlink{class_todo_1_1_remove_action}{Remove\+Action}}
+\item 
+class \mbox{\hyperlink{class_todo_1_1_add_action}{Add\+Action}}
+\item 
+class \mbox{\hyperlink{class_todo_1_1_status_change_action}{Status\+Change\+Action}}
+\item 
+class \mbox{\hyperlink{class_todo_1_1_priority_change_action}{Priority\+Change\+Action}}
+\item 
 class \mbox{\hyperlink{class_todo_1_1_controller}{Controller}}
 \item 
 struct \mbox{\hyperlink{struct_todo_1_1_task}{Task}}
@@ -50,8 +60,11 @@ enum class \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3c}{Me
 , \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3cadfa42aea7afbedb3b9336dab65f43a47}{CHANGE\+\_\+\+STATUS}} = 3
 , \newline
 \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9}{CHANGE\+\_\+\+PRIO}} = 4
-, \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec}{CLEAR}} = 5
-, \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223}{INVALID}} = 6
+, \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1}{UNDO}} = 5
+, \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f}{REDO}} = 6
+, \mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec}{CLEAR}} = 7
+, \newline
+\mbox{\hyperlink{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3caccc0377a8afbf50e7094f5c23a8af223}{INVALID}} = 8
  \}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
@@ -159,6 +172,14 @@ CHANGE\+\_\+\+STATUS&\\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CHANGE\_PRIO@{CHANGE\_PRIO}!Todo@{Todo}}\index{Todo@{Todo}!CHANGE\_PRIO@{CHANGE\_PRIO}}}\Hypertarget{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9}\label{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca3e7fb72715496513287149406a0523c9} 
 CHANGE\+\_\+\+PRIO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNDO@{UNDO}!Todo@{Todo}}\index{Todo@{Todo}!UNDO@{UNDO}}}\Hypertarget{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1}\label{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca269940bcad6fddf5c68d3e67f767c3d1} 
+UNDO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REDO@{REDO}!Todo@{Todo}}\index{Todo@{Todo}!REDO@{REDO}}}\Hypertarget{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f}\label{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3cac07bf946a7da4553f9f2776656e0d60f} 
+REDO&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CLEAR@{CLEAR}!Todo@{Todo}}\index{Todo@{Todo}!CLEAR@{CLEAR}}}\Hypertarget{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec}\label{namespace_todo_a1e8c06410e6dedcc2b8bd5c4d1145a3ca813461e0c58e7ad59a2fd83ca2237fec} 

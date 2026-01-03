@@ -11,7 +11,7 @@
 \begin{DoxyCompactList}\small\item\em Constructs an object by reading from a JSON file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_todo_1_1_model_ab09056d9c1ef4c457dfef12e6456b918}{dir\+\_\+init}} ()
 \begin{DoxyCompactList}\small\item\em Sets up the .todo directory and its contents. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_todo_1_1_model_adf6412942b84b0f09bb8668e1dd1f46a}{add}} (const std\+::string \&item\+\_\+desc, const \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} priority, const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path)
+void \mbox{\hyperlink{class_todo_1_1_model_a983fa4b2201b61fa08996e1b712e8fbb}{add}} (\mbox{\hyperlink{struct_todo_1_1_task}{Task}} task, const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path)
 \item 
 void \mbox{\hyperlink{class_todo_1_1_model_afb2a642878a1b92cc475168a3844c8fa}{remove}} (const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path)
 \item 
@@ -21,10 +21,10 @@ void \mbox{\hyperlink{class_todo_1_1_model_a49807a73c39106f4b5e148f02fa363a7}{lo
 \begin{DoxyCompactList}\small\item\em Load from a JSON file to populate todo list vector. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_todo_1_1_model_ae49b88f0a7c502dd41722d99da22d8ab}{save\+\_\+file}} ()
 \begin{DoxyCompactList}\small\item\em Save todo list vector to a JSON file. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_todo_1_1_model_aa01a8a5d9a24542c4ba86eaacb67f471}{change\+\_\+task\+\_\+status}} (const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path, const int status)
-\begin{DoxyCompactList}\small\item\em Changes the completion status of {\ttfamily index} task. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_todo_1_1_model_a5e5ad2b3f60037fb417b58a5624c0393}{change\+\_\+task\+\_\+prio}} (const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path, const int prio)
-\begin{DoxyCompactList}\small\item\em Changes the completion status of {\ttfamily index} task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_todo_1_1_model_abcf2176cb62a5ea3f201702cad6992a9}{change\+\_\+task\+\_\+status}} (const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path, const \mbox{\hyperlink{struct_todo_1_1_task_a0dc2492f114687879f5a40951ed832e6}{Status}} status)
+\begin{DoxyCompactList}\small\item\em Changes the completion status of a task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_todo_1_1_model_a137904ec0d26b3ca407eca1ab048d600}{change\+\_\+task\+\_\+priority}} (const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&path, const int priority)
+\begin{DoxyCompactList}\small\item\em Changes the completion status of a task. \end{DoxyCompactList}\item 
 const std\+::vector$<$ \mbox{\hyperlink{struct_todo_1_1_task}{Task}} $>$ \& \mbox{\hyperlink{class_todo_1_1_model_a50b70726c7df83c3f1e610f20b317b55}{get\+\_\+list}} ()
 \begin{DoxyCompactList}\small\item\em Returns a const reference of the todo list vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -47,21 +47,21 @@ Constructs an object by reading from a JSON file.
 \label{doc-func-members}
 \Hypertarget{class_todo_1_1_model_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_todo_1_1_model_adf6412942b84b0f09bb8668e1dd1f46a}\index{Todo::Model@{Todo::Model}!add@{add}}
+\Hypertarget{class_todo_1_1_model_a983fa4b2201b61fa08996e1b712e8fbb}\index{Todo::Model@{Todo::Model}!add@{add}}
 \index{add@{add}!Todo::Model@{Todo::Model}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}}
-{\footnotesize\ttfamily \label{class_todo_1_1_model_adf6412942b84b0f09bb8668e1dd1f46a} 
-void Todo\+::\+Model\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{item\+\_\+desc}{, }\item[{const \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}}}]{priority}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_todo_1_1_model_a983fa4b2201b61fa08996e1b712e8fbb} 
+void Todo\+::\+Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_todo_1_1_task}{Task}}}]{task}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{}\end{DoxyParamCaption})}
 
-/brief Adds task with description {\ttfamily task\+\_\+desc} to todo list. /param task\+\_\+desc Description of task to add. /param priority Priority of task to add. /param path Path of task to add. \Hypertarget{class_todo_1_1_model_a5e5ad2b3f60037fb417b58a5624c0393}\index{Todo::Model@{Todo::Model}!change\_task\_prio@{change\_task\_prio}}
-\index{change\_task\_prio@{change\_task\_prio}!Todo::Model@{Todo::Model}}
-\doxysubsubsection{\texorpdfstring{change\_task\_prio()}{change\_task\_prio()}}
-{\footnotesize\ttfamily \label{class_todo_1_1_model_a5e5ad2b3f60037fb417b58a5624c0393} 
-void Todo\+::\+Model\+::change\+\_\+task\+\_\+prio (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{, }\item[{const int}]{prio}{}\end{DoxyParamCaption})}
+/brief Adds task with description to todo list. /param task The task to add. /param path Path of task to add. \Hypertarget{class_todo_1_1_model_a137904ec0d26b3ca407eca1ab048d600}\index{Todo::Model@{Todo::Model}!change\_task\_priority@{change\_task\_priority}}
+\index{change\_task\_priority@{change\_task\_priority}!Todo::Model@{Todo::Model}}
+\doxysubsubsection{\texorpdfstring{change\_task\_priority()}{change\_task\_priority()}}
+{\footnotesize\ttfamily \label{class_todo_1_1_model_a137904ec0d26b3ca407eca1ab048d600} 
+void Todo\+::\+Model\+::change\+\_\+task\+\_\+priority (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{, }\item[{const int}]{priority}{}\end{DoxyParamCaption})}
 
 
 
-Changes the completion status of {\ttfamily index} task. 
+Changes the completion status of a task. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -70,15 +70,15 @@ Changes the completion status of {\ttfamily index} task.
 {\em prio} & Priority to change to. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_todo_1_1_model_aa01a8a5d9a24542c4ba86eaacb67f471}\index{Todo::Model@{Todo::Model}!change\_task\_status@{change\_task\_status}}
+\Hypertarget{class_todo_1_1_model_abcf2176cb62a5ea3f201702cad6992a9}\index{Todo::Model@{Todo::Model}!change\_task\_status@{change\_task\_status}}
 \index{change\_task\_status@{change\_task\_status}!Todo::Model@{Todo::Model}}
 \doxysubsubsection{\texorpdfstring{change\_task\_status()}{change\_task\_status()}}
-{\footnotesize\ttfamily \label{class_todo_1_1_model_aa01a8a5d9a24542c4ba86eaacb67f471} 
-void Todo\+::\+Model\+::change\+\_\+task\+\_\+status (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{, }\item[{const int}]{status}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_todo_1_1_model_abcf2176cb62a5ea3f201702cad6992a9} 
+void Todo\+::\+Model\+::change\+\_\+task\+\_\+status (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{, }\item[{const \mbox{\hyperlink{struct_todo_1_1_task_a0dc2492f114687879f5a40951ed832e6}{Status}}}]{status}{}\end{DoxyParamCaption})}
 
 
 
-Changes the completion status of {\ttfamily index} task. 
+Changes the completion status of a task. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -136,7 +136,7 @@ Uses boost.\+JSON to parse file.
 {\footnotesize\ttfamily \label{class_todo_1_1_model_afb2a642878a1b92cc475168a3844c8fa} 
 void Todo\+::\+Model\+::remove (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespace_todo_a0f033048846c82ded9882f3706ba4dc5}{u16}} $>$ \&}]{path}{}\end{DoxyParamCaption})}
 
-/brief Remove {\ttfamily index} task from the todo list. /param path Path of the task to remove. \Hypertarget{class_todo_1_1_model_ae49b88f0a7c502dd41722d99da22d8ab}\index{Todo::Model@{Todo::Model}!save\_file@{save\_file}}
+/brief Remove task from the todo list. /param path Path of the task to remove. \Hypertarget{class_todo_1_1_model_ae49b88f0a7c502dd41722d99da22d8ab}\index{Todo::Model@{Todo::Model}!save\_file@{save\_file}}
 \index{save\_file@{save\_file}!Todo::Model@{Todo::Model}}
 \doxysubsubsection{\texorpdfstring{save\_file()}{save\_file()}}
 {\footnotesize\ttfamily \label{class_todo_1_1_model_ae49b88f0a7c502dd41722d99da22d8ab} 

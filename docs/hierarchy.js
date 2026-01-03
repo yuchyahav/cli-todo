@@ -1,5 +1,11 @@
 var hierarchy =
 [
+    [ "Todo::Action", "class_todo_1_1_action.html", [
+      [ "Todo::AddAction", "class_todo_1_1_add_action.html", null ],
+      [ "Todo::PriorityChangeAction", "class_todo_1_1_priority_change_action.html", null ],
+      [ "Todo::RemoveAction", "class_todo_1_1_remove_action.html", null ],
+      [ "Todo::StatusChangeAction", "class_todo_1_1_status_change_action.html", null ]
+    ] ],
     [ "Todo::Controller", "class_todo_1_1_controller.html", null ],
     [ "Todo::Model", "class_todo_1_1_model.html", null ],
     [ "Todo::Task", "struct_todo_1_1_task.html", null ],
