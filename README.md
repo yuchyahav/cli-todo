@@ -8,13 +8,13 @@ A persistent, hierarchical command-line To-Do application allowing infinite subt
 
 ## Architectural Design
 
-MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from the user interface, which allows for swapping between a basic text UI and a rich terminal UI without changing core logic.
+I chose Model-View-Controller (MVC) to decouple data management from the user interface, which allows for swapping between a basic text UI and a rich terminal UI without changing core logic.
 
 * Model: Manages the recursive Task data structure and handles JSON file I/O using Boost.JSON.
 * View: An abstract base class defining the interface.
+  * ViView (Default): Ncurses-based with Vi-like motions.
   * BasicView: Standard text-based I/O.
   * IView: Ncurses-based TUI for an interactive experience.
-  * ViView: Ncurses-based with Vi-like motions.
 * Controller: Connects the two, parsing user input strings (like paths "121") into model commands.
 
 <img src="assets/mvc_diagram.png" width="50%" />
@@ -30,9 +30,9 @@ MVC Pattern I chose Model-View-Controller (MVC) to decouple data management from
 - [X] Task inheritance
 - [X] Task priority
 - [X] Vi view
-- [ ] Due dates
-- [ ] Undo/redo
+- [X] Undo/redo
 - [ ] Copy/paste
+- [ ] Due dates
 
 ## Installation
 
@@ -50,6 +50,9 @@ mkdir build
 cd build
 cmake ..
 make
+
+# add to path
+cp todo ~/.local/bin
 ```
 
 ## License
