@@ -7,7 +7,7 @@
 #include "types.h"
 #include "user_input.h"
 
-namespace Todo {
+namespace todo {
 class View {
 public:
   /// \brief Default Constructor.
@@ -29,4 +29,4 @@ public:
   /// \param msg String to display.
   virtual void display_msg(const std::string &msg) = 0;
 };
-}  // namespace Todo
+}  // namespace todo

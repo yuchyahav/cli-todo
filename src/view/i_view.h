@@ -4,7 +4,7 @@
 
 #include "view.h"
 
-namespace Todo {
+namespace todo {
 class IView : public View {
 private:
   WINDOW *menu_win_;     ///< Curses window to display the menu.
@@ -39,4 +39,4 @@ private:
   /// \brief Refreshes the list window (pad).
   void refresh_list_view();
 };
-}  // namespace Todo
+}  // namespace todo

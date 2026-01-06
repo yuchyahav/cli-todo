@@ -5,7 +5,7 @@
 #include "model.h"
 #include "types.h"
 
-namespace Todo {
+namespace todo {
 class Action {
 protected:
   Model *model_{nullptr};      ///< Model to perform actions on.
@@ -101,4 +101,4 @@ public:
   /// \brief undo action.
   virtual void undo() override;
 };
-}  // namespace Todo
+}  // namespace todo

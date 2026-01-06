@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['desc_0',['desc',['../struct_todo_1_1_task.html#a854772d87122caf5a24e6485d9f76243',1,'Todo::Task']]],
-  ['dir_5finit_1',['dir_init',['../class_todo_1_1_model.html#ab09056d9c1ef4c457dfef12e6456b918',1,'Todo::Model']]],
-  ['display_5flist_2',['display_list',['../class_todo_1_1_basic_view.html#a82bde59582fef0ac2d9ec033c6733989',1,'Todo::BasicView::display_list()'],['../class_todo_1_1_i_view.html#a1fecd31cd2f081f5357b566108b79098',1,'Todo::IView::display_list()'],['../class_todo_1_1_vi_view.html#a6dca1aadc018436d2c149c1b468b3191',1,'Todo::ViView::display_list()'],['../class_todo_1_1_view.html#a14bf93feb65cbe98e21413591b69126e',1,'Todo::View::display_list()']]],
-  ['display_5fmsg_3',['display_msg',['../class_todo_1_1_basic_view.html#ae45b27e6b5f67177c3738a238670af0c',1,'Todo::BasicView::display_msg()'],['../class_todo_1_1_i_view.html#ae7713072a95a3b637f6b5760b5264622',1,'Todo::IView::display_msg()'],['../class_todo_1_1_vi_view.html#a6099ee49838cb20738578b9951157457',1,'Todo::ViView::display_msg()'],['../class_todo_1_1_view.html#a98e04233fdab66c1cee1d07358b93dc8',1,'Todo::View::display_msg()']]]
+  ['desc_0',['desc',['../structtodo_1_1_task.html#a140d4ddc068dd6d6a19ce3fbda954fb6',1,'todo::Task']]],
+  ['dir_5finit_1',['dir_init',['../classtodo_1_1_model.html#a9a2b55d1dca034b956ec8f2e8b34138d',1,'todo::Model']]],
+  ['display_5flist_2',['display_list',['../classtodo_1_1_basic_view.html#a9b3c8d17a35e81b6428178ef76c2fe8b',1,'todo::BasicView::display_list()'],['../classtodo_1_1_i_view.html#a1e1f592331780033332550fa371d8a03',1,'todo::IView::display_list()'],['../classtodo_1_1_vi_view.html#adfd487a3a2a36b0cf2b98a23f62d85cc',1,'todo::ViView::display_list()'],['../classtodo_1_1_view.html#aaa1813ee79be893b0a922e1b895675fe',1,'todo::View::display_list()']]],
+  ['display_5fmsg_3',['display_msg',['../classtodo_1_1_basic_view.html#a89dd27f7ba746a8c7a68116b98f59b3a',1,'todo::BasicView::display_msg()'],['../classtodo_1_1_i_view.html#a7fd9c0c06469f508cb479119c25295af',1,'todo::IView::display_msg()'],['../classtodo_1_1_vi_view.html#a49598945a99eaef5893f5301c6052ce6',1,'todo::ViView::display_msg()'],['../classtodo_1_1_view.html#a7c78e1b46903b7b795a7825da61fb0f3',1,'todo::View::display_msg()']]]
 ];

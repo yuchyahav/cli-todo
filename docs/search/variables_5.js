@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sen_0',['SEN',['../namespace_todo.html#aa63f219aa3f7adcccb98d3e6429b9355',1,'Todo']]],
-  ['status_1',['status',['../struct_todo_1_1_task.html#aaf136e6b7faac0047fe6fe6c9d71103f',1,'Todo::Task']]]
+  ['sen_0',['SEN',['../namespacetodo.html#aeb31537c10c76dc10160d77411e7f524',1,'todo']]],
+  ['status_1',['status',['../structtodo_1_1_task.html#a21931b4d1f41063832bc9b789e1ec660',1,'todo::Task']]]
 ];

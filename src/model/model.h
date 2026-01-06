@@ -7,7 +7,7 @@
 #include "task.h"
 #include "types.h"
 
-namespace Todo {
+namespace todo {
 class Model {
 private:
   const static inline std::filesystem::path TODO_DIR = ".todo";  ///< Directory name.
@@ -60,4 +60,4 @@ private:
   /// \brief Changes all child tasks' status according to parent.
   void change_child_task_status(Task &task, const Status status);
 };
-}  // namespace Todo
+}  // namespace todo

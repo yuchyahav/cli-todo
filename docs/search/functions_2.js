@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['change_5ftask_5fpriority_0',['change_task_priority',['../class_todo_1_1_model.html#a137904ec0d26b3ca407eca1ab048d600',1,'Todo::Model']]],
-  ['change_5ftask_5fstatus_1',['change_task_status',['../class_todo_1_1_model.html#abcf2176cb62a5ea3f201702cad6992a9',1,'Todo::Model']]],
-  ['clear_2',['clear',['../class_todo_1_1_model.html#a7679bf3b9aa98c25c5a69e18cd98aaa9',1,'Todo::Model']]],
-  ['clear_5finput_5fbuf_3',['clear_input_buf',['../namespace_todo.html#a55a5df34f84fbef3cf918b3b7a175c79',1,'Todo']]],
-  ['controller_4',['Controller',['../class_todo_1_1_controller.html#a8746f4f166f57a6cc5e32259c69f04de',1,'Todo::Controller']]]
+  ['change_5ftask_5fpriority_0',['change_task_priority',['../classtodo_1_1_model.html#a0ca09008eeb9034af659914fff2e0d3f',1,'todo::Model']]],
+  ['change_5ftask_5fstatus_1',['change_task_status',['../classtodo_1_1_model.html#a74aae297d52923deb67f70325199263c',1,'todo::Model']]],
+  ['clear_2',['clear',['../classtodo_1_1_model.html#ace3a3bd53595d9f59c8de11c9598fbda',1,'todo::Model']]],
+  ['clear_5finput_5fbuf_3',['clear_input_buf',['../namespacetodo.html#a50a4fc4f1d2d77683b5c8ecbc8248e7d',1,'todo']]],
+  ['controller_4',['Controller',['../classtodo_1_1_controller.html#af8cdcbd5fe10409be145393b553f4963',1,'todo::Controller']]]
 ];

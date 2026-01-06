@@ -3,7 +3,7 @@
 
 #include "vi_view.h"
 
-namespace Todo {
+namespace todo {
 constexpr std::string SEN = "deadbeef";
 
 ViView::ViView()
@@ -304,4 +304,4 @@ void ViView::display_msg(const std::string &msg)
   mvwprintw(notif_, 1, 0, "Press any key to continue. ");
   wrefresh(notif_);
 }
-}  // namespace Todo
+}  // namespace todo

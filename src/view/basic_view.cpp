@@ -9,7 +9,7 @@
 #include "types.h"
 #include "user_input.h"
 
-namespace Todo {
+namespace todo {
 void clear_input_buf()
 {
   std::cin.clear();
@@ -59,4 +59,4 @@ void BasicView::display_msg(const std::string &msg)
 {
   std::cout << msg << '\n';
 }
-}  // namespace Todo
+}  // namespace todo

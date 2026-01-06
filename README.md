@@ -31,8 +31,8 @@ I chose Model-View-Controller (MVC) to decouple data management from the user in
 - [X] Task priority
 - [X] Vi view
 - [X] Undo/redo
-- [ ] Copy/paste
 - [ ] Due dates
+- [ ] Change task description
 
 ## Installation
 

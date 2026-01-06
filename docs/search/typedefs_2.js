@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['u16_0',['u16',['../namespace_todo.html#a0f033048846c82ded9882f3706ba4dc5',1,'Todo']]],
-  ['u32_1',['u32',['../namespace_todo.html#a3b77bdac100a12793978789c7afcd1b4',1,'Todo']]],
-  ['u64_2',['u64',['../namespace_todo.html#a2ec92f9087d1f887d2ad57b5cb00b186',1,'Todo']]],
-  ['u8_3',['u8',['../namespace_todo.html#a6bf1a7e8c46fa7e85101f3f48f33b373',1,'Todo']]]
+  ['u16_0',['u16',['../namespacetodo.html#a01f639f1521effd0c112afd273e8b233',1,'todo']]],
+  ['u32_1',['u32',['../namespacetodo.html#afdaf8a136a3195c20514e4d65da43529',1,'todo']]],
+  ['u64_2',['u64',['../namespacetodo.html#ab22bc1beb51bff792d48b6f9057d50f7',1,'todo']]],
+  ['u8_3',['u8',['../namespacetodo.html#a3c2494205b390d9b22b260fbd6c043b8',1,'todo']]]
 ];

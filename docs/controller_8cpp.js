@@ -1,5 +1,5 @@
 var controller_8cpp =
 [
-    [ "Todo::pre_order_trav", "namespace_todo.html#a42f6ee3e71cc2e80081e5983e742a92f", null ],
-    [ "Todo::SEN", "namespace_todo.html#aa63f219aa3f7adcccb98d3e6429b9355", null ]
+    [ "todo::pre_order_trav", "namespacetodo.html#a6b92b80d95281e58507863197f0a9fff", null ],
+    [ "todo::SEN", "namespacetodo.html#aeb31537c10c76dc10160d77411e7f524", null ]
 ];

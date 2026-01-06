@@ -9,7 +9,7 @@
 #include "i_view.h"
 #include "task.h"
 
-namespace Todo {
+namespace todo {
 IView::IView()
 {
   initscr();
@@ -166,4 +166,4 @@ void IView::display_msg(const std::string &msg)
   wrefresh(menu_win_);
   wgetch(menu_win_);
 }
-}  // namespace Todo
+}  // namespace todo

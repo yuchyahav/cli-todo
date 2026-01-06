@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['remove_0',['remove',['../class_todo_1_1_model.html#afb2a642878a1b92cc475168a3844c8fa',1,'Todo::Model']]],
-  ['removeaction_1',['RemoveAction',['../class_todo_1_1_remove_action.html#a7f6ad1f94f0ca385f957df1ae9774b74',1,'Todo::RemoveAction']]],
-  ['run_2',['run',['../class_todo_1_1_controller.html#acc3b72e113aaf34452133b0cb4160fd6',1,'Todo::Controller']]]
+  ['remove_0',['remove',['../classtodo_1_1_model.html#a7ba2b5799d90c111df7c6df299eaa37a',1,'todo::Model']]],
+  ['removeaction_1',['RemoveAction',['../classtodo_1_1_remove_action.html#af4a8dd753ed1d6ea1c132a36b42fb34d',1,'todo::RemoveAction']]],
+  ['run_2',['run',['../classtodo_1_1_controller.html#a847f4eed3c2a15bd1213875dc2d6bc3b',1,'todo::Controller']]]
 ];

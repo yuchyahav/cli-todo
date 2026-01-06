@@ -1,6 +1,6 @@
 #include "actions/actions.h"
 
-namespace Todo {
+namespace todo {
 Action::Action(Model &model, std::vector<u16> path)
   : model_(&model)
   , exe_path_(std::move(path))
@@ -120,4 +120,4 @@ void PriorityChangeAction::undo()
 {
   model_->change_task_priority(exe_path_, old_priority_);
 }
-}  // namespace Todo
+}  // namespace todo

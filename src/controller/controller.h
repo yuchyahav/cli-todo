@@ -7,7 +7,7 @@
 #include "model.h"
 #include "view.h"
 
-namespace Todo {
+namespace todo {
 class Controller {
 private:
   Model model_;                 ///< The [M]odel of the MVC.
@@ -55,4 +55,4 @@ private:
   /// \return A vector of non-negative integers.
   std::vector<u16> parse_path(const UserInput &user_input);
 };
-}  // namespace Todo
+}  // namespace todo

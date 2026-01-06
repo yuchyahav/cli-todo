@@ -5,7 +5,7 @@
 #include "types.h"
 #include "view.h"
 
-namespace Todo {
+namespace todo {
 class ViView : public View {
 private:
   WINDOW *list_pad_{nullptr};  ///< Curses pad to display list.
@@ -76,4 +76,4 @@ private:
   /// \brief Handles SIBLING_INSERT mode.
   void handle_sibling_insert();
 };
-}  // namespace Todo
+}  // namespace todo

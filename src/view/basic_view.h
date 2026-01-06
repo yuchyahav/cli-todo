@@ -3,7 +3,7 @@
 #include "task.h"
 #include "view.h"
 
-namespace Todo {
+namespace todo {
 class BasicView : public View {
 public:
   /// \brief Default constructor.
@@ -22,4 +22,4 @@ public:
   /// \param msg String to display.
   virtual void display_msg(const std::string &msg) override;
 };
-}  // namespace Todo
+}  // namespace todo

@@ -12,7 +12,7 @@
 #include "vi_view.h"
 #include "view.h"
 
-namespace Todo {
+namespace todo {
 constexpr std::string SEN = "deadbeef";
 
 Controller::Controller(int argc, char **argv)
@@ -32,7 +32,7 @@ void Controller::run()
   while (running) {
     handle_display();
     UserInput str_opt = view_->get_input(
-      "=== Todo Menu ===\n"
+      "=== todo Menu ===\n"
       "1. Add task\n"
       "2. Remove task\n"
       "3. Change task status\n"
@@ -288,4 +288,4 @@ void Controller::handle_redo()
   undo_stack_.push(std::move(redo_stack_.top()));
   redo_stack_.pop();
 }
-}  // namespace Todo
+}  // namespace todo

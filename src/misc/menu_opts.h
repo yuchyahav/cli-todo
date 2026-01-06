@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Todo {
+namespace todo {
 enum class MenuOptions {
   EXIT = 0,
   ADD = 1,
@@ -12,4 +12,4 @@ enum class MenuOptions {
   CLEAR = 7,
   INVALID = 8
 };
-}  // namespace Todo
+}  // namespace todo

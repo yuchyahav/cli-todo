@@ -1,0 +1,14 @@
+var structtodo_1_1_task =
+[
+    [ "Status", "structtodo_1_1_task.html#a5ed19984d30523d42230049cd5527881", [
+      [ "NOT_STARTED", "structtodo_1_1_task.html#a5ed19984d30523d42230049cd5527881a06972acc3aafeb3a65dbd996c8dedc73", null ],
+      [ "IN_PROGRESS", "structtodo_1_1_task.html#a5ed19984d30523d42230049cd5527881aca69f96c768067fbff6c911ca87bccc9", null ],
+      [ "COMPLETED", "structtodo_1_1_task.html#a5ed19984d30523d42230049cd5527881a8f7afecbc8fbc4cd0f50a57d1172482e", null ]
+    ] ],
+    [ "operator!=", "structtodo_1_1_task.html#afa18d6d397a6b8ef624f714b76f2f845", null ],
+    [ "operator==", "structtodo_1_1_task.html#aa71d8c8524bd9c62342b30bb7cd2b909", null ],
+    [ "child_tasks", "structtodo_1_1_task.html#a805a45271abde7aa3e61738ee49308b5", null ],
+    [ "desc", "structtodo_1_1_task.html#a140d4ddc068dd6d6a19ce3fbda954fb6", null ],
+    [ "priority", "structtodo_1_1_task.html#ae584d56b87aa28ce31486d9f7c02cb9f", null ],
+    [ "status", "structtodo_1_1_task.html#a21931b4d1f41063832bc9b789e1ec660", null ]
+];

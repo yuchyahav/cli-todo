@@ -1,4 +1,4 @@
 var view_8h =
 [
-    [ "Todo::View", "class_todo_1_1_view.html", "class_todo_1_1_view" ]
+    [ "todo::View", "classtodo_1_1_view.html", "classtodo_1_1_view" ]
 ];

@@ -7,7 +7,7 @@
 #include "model.h"
 #include "task.h"
 
-namespace Todo {
+namespace todo {
 Model::Model()
 {
   load_file();
@@ -172,4 +172,4 @@ const std::vector<Task> &Model::get_list()
 {
   return todo_list_;
 }
-}  // namespace Todo
+}  // namespace todo
